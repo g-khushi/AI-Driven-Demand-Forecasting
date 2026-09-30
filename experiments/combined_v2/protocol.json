@@ -1,0 +1,41 @@
+{
+  "status": "development_only",
+  "seed": 20260928,
+  "datasets": [
+    "dunnhumby",
+    "favorita",
+    "uci"
+  ],
+  "entities_per_dataset": 12,
+  "raw_population_scope": "bounded existing pilot cohort, not full-population training",
+  "component_models": [
+    "Naive",
+    "SARIMA",
+    "XGBoost",
+    "LSTM",
+    "Transformer"
+  ],
+  "pooling": "shared XGBoost/LSTM/Transformer across labelled, separately normalized retailer series; Naive and SARIMA remain local series models",
+  "lookback": 28,
+  "max_horizon": 16,
+  "neural_epochs": 20,
+  "neural_batch_size": 64,
+  "neural_lr": 0.001,
+  "neural_loss": "domain-balanced squared error on training-scaled demand",
+  "transformer": "compact pre-LN modality-specific temporal/cross attention, d_model64 heads4; inspired by paper equations9\u201312; not full MARIOD",
+  "calibration_fold_1": "fit four declared Hybrid weighting candidates",
+  "calibration_fold_2": "select weighting method by equal-dataset mean normalized MAE; deterministic candidate order breaks ties",
+  "calibration_folds_3_4": "held-out development evaluation after method selection; freeze weights from folds1\u20132 before evaluating3\u20134",
+  "hybrid_candidates": [
+    "inverse_MAE",
+    "pooled_MAE",
+    "dataset_shrinkage",
+    "regime_shrinkage"
+  ],
+  "optimizer_minimum_component_weight": 0.01,
+  "correction": "bounded median normalized residual shrinkage factors [0,0.5,1]; select on fold2 using fold1 residuals, refit residual median on folds1\u20132; frozen before folds3\u20134. Same rule available to comparator if authorized.",
+  "final_test_enabled": false,
+  "mariod_comparator_status": "awaiting user choice: forecasting-only reconstruction or author implementation plus missing inputs",
+  "full_mariod_enabled": false,
+  "chronology": "Retrospective multi-domain study; independent source cutoffs, not one shared calendar or claim of as-of historical external-data availability."
+}

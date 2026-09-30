@@ -1,0 +1,462 @@
+{
+  "created_utc": "2026-09-28T13:19:32.553231+00:00",
+  "scope": "36 fixed series; four original final-test origins per dataset; not full-population training",
+  "primary_model": "Hybrid_v2_corrected",
+  "primary_comparator": "MARIOD_forecasting_reconstruction_corrected",
+  "comparator_limit": "compact forecasting-only reconstruction; same as cross-modal Transformer component, no inventory/RL/sensor claims",
+  "primary_metric": "equal-dataset mean normalized MAE using training-only scales fixed before test",
+  "training": "Refit five component models once through final-test first origin; freeze learned parameters and transforms for all four test origins. Update observed history and SARIMA filtering state only, never parameters.",
+  "hybrid": {
+    "method": "regime_shrinkage",
+    "max_fit_fold": 2,
+    "pooled_weights": [
+      0.10005169461564344,
+      0.01,
+      0.01,
+      0.8173426188700632,
+      0.06260568651429338
+    ],
+    "groups": {
+      "dunnhumby": [
+        0.032512923653910855,
+        0.01,
+        0.01,
+        0.9243356547175158,
+        0.023151421628573345
+      ],
+      "dunnhumby::intermittent": [
+        0.02125646182695543,
+        0.01,
+        0.01,
+        0.9421678273587579,
+        0.016575710814286673
+      ],
+      "dunnhumby::frequent": [
+        0.07146861661575737,
+        0.3771868729337245,
+        0.01,
+        0.5247687996362314,
+        0.016575710814286673
+      ],
+      "favorita": [
+        0.41939376542376205,
+        0.01,
+        0.07237622910402611,
+        0.31600654714848564,
+        0.18222345832372622
+      ],
+      "favorita::intermittent": [
+        0.689696882711881,
+        0.01,
+        0.04118811455201305,
+        0.16300327357424282,
+        0.09611172916186311
+      ],
+      "favorita::frequent": [
+        0.40071254415786384,
+        0.19672071828069407,
+        0.04118811455201305,
+        0.26526689384756597,
+        0.09611172916186311
+      ],
+      "uci": [
+        0.032512923653910855,
+        0.01,
+        0.01,
+        0.8678512145609,
+        0.07963586178518922
+      ],
+      "uci::intermittent": [
+        0.02125646182695543,
+        0.01,
+        0.01,
+        0.7372580349080986,
+        0.22148550326494598
+      ],
+      "uci::frequent": [
+        0.02125646182695543,
+        0.01,
+        0.01,
+        0.8876227640233033,
+        0.0711207741497413
+      ]
+    },
+    "diagnostics": {
+      "dunnhumby": {
+        "max_label": 627,
+        "cells": 336
+      },
+      "favorita": {
+        "max_label": 1592,
+        "cells": 384
+      },
+      "uci": {
+        "max_label": 289,
+        "cells": 276
+      }
+    },
+    "component_order": [
+      "Naive",
+      "SARIMA",
+      "XGBoost",
+      "LSTM",
+      "Transformer"
+    ]
+  },
+  "reference_hybrid": {
+    "method": "inverse_MAE",
+    "max_fit_fold": 2,
+    "pooled_weights": [
+      0.10005169461564344,
+      0.01,
+      0.01,
+      0.8173426188700632,
+      0.06260568651429338
+    ],
+    "groups": {
+      "dunnhumby": [
+        0.16405610525889303,
+        0.204419229024112,
+        0.19481270182220106,
+        0.23177154390569119,
+        0.20494041998910267
+      ],
+      "favorita": [
+        0.2201476373107807,
+        0.20307658697871822,
+        0.19459994866661923,
+        0.18952157231780983,
+        0.1926542547260721
+      ],
+      "uci": [
+        0.14460150838267735,
+        0.19352147408951623,
+        0.20882720789023113,
+        0.245129238171235,
+        0.20792057146634024
+      ]
+    },
+    "diagnostics": {
+      "dunnhumby": {
+        "max_label": 627,
+        "cells": 336
+      },
+      "favorita": {
+        "max_label": 1592,
+        "cells": 384
+      },
+      "uci": {
+        "max_label": 289,
+        "cells": 276
+      }
+    },
+    "component_order": [
+      "Naive",
+      "SARIMA",
+      "XGBoost",
+      "LSTM",
+      "Transformer"
+    ]
+  },
+  "corrections": {
+    "Hybrid_v2": {
+      "factor": 1.0,
+      "offsets": {
+        "dunnhumby": -0.021731852750925505,
+        "favorita": -0.13115991131509422,
+        "uci": -0.0555096392655398
+      },
+      "fit_max_fold": 2,
+      "selection": "fold 2 only; ties prefer smaller correction",
+      "correction": "add scale times dataset median normalized residual times selected shrinkage, then clip at zero"
+    },
+    "MARIOD_forecasting_reconstruction": {
+      "factor": 1.0,
+      "offsets": {
+        "dunnhumby": -0.3176625382180182,
+        "favorita": -0.3204975953562794,
+        "uci": -0.3856650475793691
+      },
+      "fit_max_fold": 2,
+      "selection": "fold 2 only; ties prefer smaller correction",
+      "correction": "add scale times dataset median normalized residual times selected shrinkage, then clip at zero"
+    }
+  },
+  "split": {
+    "dunnhumby": {
+      "horizon_days": 14,
+      "initial_training_end": "543",
+      "time_axis": "relative_DAY",
+      "folds": {
+        "tuning": [
+          {
+            "origin": "543",
+            "forecast_start": "544",
+            "forecast_end": "557"
+          },
+          {
+            "origin": "557",
+            "forecast_start": "558",
+            "forecast_end": "571"
+          },
+          {
+            "origin": "571",
+            "forecast_start": "572",
+            "forecast_end": "585"
+          },
+          {
+            "origin": "585",
+            "forecast_start": "586",
+            "forecast_end": "599"
+          }
+        ],
+        "calibration": [
+          {
+            "origin": "599",
+            "forecast_start": "600",
+            "forecast_end": "613"
+          },
+          {
+            "origin": "613",
+            "forecast_start": "614",
+            "forecast_end": "627"
+          },
+          {
+            "origin": "627",
+            "forecast_start": "628",
+            "forecast_end": "641"
+          },
+          {
+            "origin": "641",
+            "forecast_start": "642",
+            "forecast_end": "655"
+          }
+        ],
+        "final_test": [
+          {
+            "origin": "655",
+            "forecast_start": "656",
+            "forecast_end": "669"
+          },
+          {
+            "origin": "669",
+            "forecast_start": "670",
+            "forecast_end": "683"
+          },
+          {
+            "origin": "683",
+            "forecast_start": "684",
+            "forecast_end": "697"
+          },
+          {
+            "origin": "697",
+            "forecast_start": "698",
+            "forecast_end": "711"
+          }
+        ]
+      },
+      "test_parameter_updates": false,
+      "past_test_context_updates": "Only after observations become available at later origins; no weight changes."
+    },
+    "favorita": {
+      "horizon_days": 16,
+      "initial_training_end": "2017-02-04",
+      "time_axis": "calendar_date",
+      "folds": {
+        "tuning": [
+          {
+            "origin": "2017-02-04",
+            "forecast_start": "2017-02-05",
+            "forecast_end": "2017-02-20"
+          },
+          {
+            "origin": "2017-02-20",
+            "forecast_start": "2017-02-21",
+            "forecast_end": "2017-03-08"
+          },
+          {
+            "origin": "2017-03-08",
+            "forecast_start": "2017-03-09",
+            "forecast_end": "2017-03-24"
+          },
+          {
+            "origin": "2017-03-24",
+            "forecast_start": "2017-03-25",
+            "forecast_end": "2017-04-09"
+          }
+        ],
+        "calibration": [
+          {
+            "origin": "2017-04-09",
+            "forecast_start": "2017-04-10",
+            "forecast_end": "2017-04-25"
+          },
+          {
+            "origin": "2017-04-25",
+            "forecast_start": "2017-04-26",
+            "forecast_end": "2017-05-11"
+          },
+          {
+            "origin": "2017-05-11",
+            "forecast_start": "2017-05-12",
+            "forecast_end": "2017-05-27"
+          },
+          {
+            "origin": "2017-05-27",
+            "forecast_start": "2017-05-28",
+            "forecast_end": "2017-06-12"
+          }
+        ],
+        "final_test": [
+          {
+            "origin": "2017-06-12",
+            "forecast_start": "2017-06-13",
+            "forecast_end": "2017-06-28"
+          },
+          {
+            "origin": "2017-06-28",
+            "forecast_start": "2017-06-29",
+            "forecast_end": "2017-07-14"
+          },
+          {
+            "origin": "2017-07-14",
+            "forecast_start": "2017-07-15",
+            "forecast_end": "2017-07-30"
+          },
+          {
+            "origin": "2017-07-30",
+            "forecast_start": "2017-07-31",
+            "forecast_end": "2017-08-15"
+          }
+        ]
+      },
+      "test_parameter_updates": false,
+      "past_test_context_updates": "Only after observations become available at later origins; no weight changes."
+    },
+    "uci": {
+      "horizon_days": 14,
+      "initial_training_end": "2011-06-23",
+      "time_axis": "calendar_date",
+      "folds": {
+        "tuning": [
+          {
+            "origin": "2011-06-23",
+            "forecast_start": "2011-06-24",
+            "forecast_end": "2011-07-07"
+          },
+          {
+            "origin": "2011-07-07",
+            "forecast_start": "2011-07-08",
+            "forecast_end": "2011-07-21"
+          },
+          {
+            "origin": "2011-07-21",
+            "forecast_start": "2011-07-22",
+            "forecast_end": "2011-08-04"
+          },
+          {
+            "origin": "2011-08-04",
+            "forecast_start": "2011-08-05",
+            "forecast_end": "2011-08-18"
+          }
+        ],
+        "calibration": [
+          {
+            "origin": "2011-08-18",
+            "forecast_start": "2011-08-19",
+            "forecast_end": "2011-09-01"
+          },
+          {
+            "origin": "2011-09-01",
+            "forecast_start": "2011-09-02",
+            "forecast_end": "2011-09-15"
+          },
+          {
+            "origin": "2011-09-15",
+            "forecast_start": "2011-09-16",
+            "forecast_end": "2011-09-29"
+          },
+          {
+            "origin": "2011-09-29",
+            "forecast_start": "2011-09-30",
+            "forecast_end": "2011-10-13"
+          }
+        ],
+        "final_test": [
+          {
+            "origin": "2011-10-13",
+            "forecast_start": "2011-10-14",
+            "forecast_end": "2011-10-27"
+          },
+          {
+            "origin": "2011-10-27",
+            "forecast_start": "2011-10-28",
+            "forecast_end": "2011-11-10"
+          },
+          {
+            "origin": "2011-11-10",
+            "forecast_start": "2011-11-11",
+            "forecast_end": "2011-11-24"
+          },
+          {
+            "origin": "2011-11-24",
+            "forecast_start": "2011-11-25",
+            "forecast_end": "2011-12-08"
+          }
+        ]
+      },
+      "test_parameter_updates": false,
+      "past_test_context_updates": "Only after observations become available at later origins; no weight changes."
+    }
+  },
+  "base_hyperparameters": {
+    "status": "development_only",
+    "seed": 20260928,
+    "datasets": [
+      "dunnhumby",
+      "favorita",
+      "uci"
+    ],
+    "entities_per_dataset": 12,
+    "raw_population_scope": "bounded existing pilot cohort, not full-population training",
+    "component_models": [
+      "Naive",
+      "SARIMA",
+      "XGBoost",
+      "LSTM",
+      "Transformer"
+    ],
+    "pooling": "shared XGBoost/LSTM/Transformer across labelled, separately normalized retailer series; Naive and SARIMA remain local series models",
+    "lookback": 28,
+    "max_horizon": 16,
+    "neural_epochs": 20,
+    "neural_batch_size": 64,
+    "neural_lr": 0.001,
+    "neural_loss": "domain-balanced squared error on training-scaled demand",
+    "transformer": "compact pre-LN modality-specific temporal/cross attention, d_model64 heads4; inspired by paper equations9\u201312; not full MARIOD",
+    "calibration_fold_1": "fit four declared Hybrid weighting candidates",
+    "calibration_fold_2": "select weighting method by equal-dataset mean normalized MAE; deterministic candidate order breaks ties",
+    "calibration_folds_3_4": "held-out development evaluation after method selection; freeze weights from folds1\u20132 before evaluating3\u20134",
+    "hybrid_candidates": [
+      "inverse_MAE",
+      "pooled_MAE",
+      "dataset_shrinkage",
+      "regime_shrinkage"
+    ],
+    "optimizer_minimum_component_weight": 0.01,
+    "correction": "bounded median normalized residual shrinkage factors [0,0.5,1]; select on fold2 using fold1 residuals, refit residual median on folds1\u20132; frozen before folds3\u20134. Same rule available to comparator if authorized.",
+    "final_test_enabled": false,
+    "mariod_comparator_status": "awaiting user choice: forecasting-only reconstruction or author implementation plus missing inputs",
+    "full_mariod_enabled": false,
+    "chronology": "Retrospective multi-domain study; independent source cutoffs, not one shared calendar or claim of as-of historical external-data availability."
+  },
+  "final_test_parameter_updates": false,
+  "post_test_selection_allowed": false,
+  "source_checksums": {
+    "experiments/split_manifest.json": "53dace3b1f13386650735bd98180d22d7bdb664e99ebb48321bcfaa9f7094f5d",
+    "experiments/combined_v2/protocol.json": "b2d35e8e6e58df7ad85a7cc7ee31f84d7b59b22a1b312ab99f3c025a364abddb",
+    "models/combined_v2/selected_hybrid.json": "9f2edc2b997dede3e8252863ac71f977112ff7e11f6f2509f5b4c3c42882d288",
+    "models/combined_v2/reference_hybrid.json": "517f644d8e1496ff4fbd5fa17b94f81a57af71171da6726d0b54f3ea06d47f7b",
+    "models/combined_v2/correction_configuration.json": "59ba25cc9234d35ec2b66061d57818e4b2f4eded528242cfcd630d53034c845f"
+  }
+}

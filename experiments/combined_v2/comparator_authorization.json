@@ -1,0 +1,6 @@
+{
+  "forecasting_only_authorized": true,
+  "authorization_basis": "User said complete the pending work after being told forecasting-only reconstruction is the available alternative; proceeding within available data, without claiming full MARIOD.",
+  "user_request": "complete the pending work also tell me if my hybrid model better or not?",
+  "recorded_utc": "2026-09-28T13:18:31.702968+00:00"
+}

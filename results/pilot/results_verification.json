@@ -1,0 +1,11 @@
+{
+  "status": "pass",
+  "checks": [
+    "metric analytic zero-denominator, MAPE-coverage and perishability-weight examples passed",
+    "dunnhumby: prediction keys, chronology, convex weights and independently recomputed Hybrid predictions verified",
+    "favorita: prediction keys, chronology, convex weights and independently recomputed Hybrid predictions verified",
+    "uci: prediction keys, chronology, convex weights and independently recomputed Hybrid predictions verified"
+  ],
+  "final_test_evaluated": false,
+  "independent_evaluation_origins_per_dataset": 1
+}

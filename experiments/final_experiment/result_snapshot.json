@@ -1,0 +1,28 @@
+{
+  "created_utc": "2026-09-29T06:26:23.096815+00:00",
+  "checksums": {
+    "src/final_experiment/audit.py": "53900967fc8bf273a45635257ba70fc3b66435c9094ce1513a38e7e2d627abfb",
+    "src/final_experiment/predict.py": "f8c6e760401b3d38c7695f505a7df9eb73d7299ae1eb6a17b7f846ebd5e959be",
+    "src/final_experiment/common.py": "cea607084781ce02d37a73806f650c22c214fc2189fc7089910718f998c65d50",
+    "src/final_experiment/train_once.py": "d6fd18e00ef475f9598c82d84d60475c2788846faf7c2d702122789129f3a2c7",
+    "src/final_experiment/prepare.py": "5279ef974a991196040782be18765db991d04550d422da3662d90086b46764eb",
+    "src/reporting/evaluate_final_experiment.py": "e484308d2b38bce181147552e48bee56f48fb7a9385bbc2b05827eaed2621340",
+    "results/final_experiment/combined_accuracy.csv": "6623c97d0fbc5764ca260f63500e3506f7667d3d86f2fd54101aecb933a9c0a1",
+    "results/final_experiment/comparison_consistency.csv": "1389b1159d6ee27ecd43873b2afef60fb5493f7be134c168e5d8bd5b877699e9",
+    "results/final_experiment/final_accuracy.csv": "caf4b80f3d07271195e1c69701b3752c436f8ee405dbe0cd37fcad834a95bdd4",
+    "results/final_experiment/accuracy_and_correction_comparisons.csv": "8ca0c5f2d9f08e00ae10321f9baefc23485d610dc7bc49506325591e5ff7b053",
+    "results/final_experiment/final_predictions_all.csv": "ec12a2c605ffdfe207f8539ecd569ee0c2342b57819ff6e1fa54dfced5150798",
+    "results/final_experiment/fold_1_training.csv": "bf5d915c283d2611d970afacff90003b3f1304c249ae03a1ae1d4b9dbab4a429",
+    "results/final_experiment/fold_1_component_predictions.csv": "1db2f6508097d7ed4aa95ec58b661181e8c17fbcddf3ced7b05569a703fe318e",
+    "results/final_experiment/error_analysis.csv": "41fc865f36c105b261c4f615f4386bcf361500a60dc7a2b48fe44f735b71e658",
+    "results/final_experiment/final_predictions_common.csv": "6e8e17c4a94792088356e44a5fe48d6520567db38fe9ca302e8e0161d1dce4e1",
+    "results/final_experiment/fold_1_compute.csv": "86bfc06b93923aea564231a7d283edfb7be96a5bf1a710ef0cbe574717c3a318",
+    "results/final_experiment/test_component_predictions.csv": "881a5df1cc80b838ac7cd58cd5dcbb6154a2c760ffd6ae78fba9864ff67cfd77",
+    "results/final_experiment/test_inference_costs.csv": "07b6aadc344b1fb7bf47cec393df4fe2b9ddf95b51145789dc613ffd83ed6c65",
+    "results/final_experiment/failure_coverage.csv": "43f33a394309662a00c17f3f9b8a8028e62674e7da1cb4ac70b9e59002bbf3c2",
+    "results/final_experiment/verdict.json": "0b7eda269bed7a9e158a2f950783ef047385a88d88a063386835f5e1a252a4e4",
+    "results/final_experiment/final_comparison_report.md": "e758c508ba481f13d504825fd44a97fb25d7f706bf3b8b8c5d2928531fcb16df"
+  },
+  "model_changes_after_test": false,
+  "scope": "36-series final test complete; full population and full MARIOD not completed"
+}

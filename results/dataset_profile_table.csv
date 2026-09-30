@@ -1,0 +1,4 @@
+Dataset,Rows,Columns,Date Range,Stores,Products,Customers,Target,Frequency
+Dunnhumby,2595732,12,DAY 1–711 (calendar anchor unknown),582,92339,2500,Positive product quantity,daily relative DAY
+Favorita,125497040,6,2013-01-01 to 2017-08-15,54,4036,not supplied,Nonnegative daily unit_sales proxy,daily
+UCI Online Retail,541909,8,2010-12-01 to 2011-12-09,online channel,4070,4372,Positive non-cancelled merchandise quantity,daily aggregation

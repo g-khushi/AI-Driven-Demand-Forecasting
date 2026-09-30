@@ -1,0 +1,14 @@
+{
+  "codes": [
+    "AMAZONFEE",
+    "BANK CHARGES",
+    "C2",
+    "D",
+    "DOT",
+    "M",
+    "POST",
+    "S"
+  ],
+  "prefix": "GIFT_",
+  "basis": "Initial-training descriptions: fees, carriage, discounts, postage, manual and sample entries, gift vouchers. Nonstandard merchandise codes retained."
+}

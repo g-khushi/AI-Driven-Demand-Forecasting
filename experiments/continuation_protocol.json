@@ -1,0 +1,73 @@
+{
+  "stage": "deterministic_feasibility_pilot_only",
+  "datasets": [
+    "dunnhumby",
+    "favorita",
+    "uci"
+  ],
+  "individual_models": [
+    "Naive",
+    "SARIMA",
+    "XGBoost",
+    "LSTM",
+    "Transformer"
+  ],
+  "hybrid_status": "new_implementation_requested_by_user",
+  "hybrid_architecture": "inverse-validation-MAE weighted combination of exactly the five components; calibration fold 1 weights, frozen prequential evaluation on calibration fold 2",
+  "hybrid_discovery": {
+    "searched_root": "project",
+    "terms": [
+      "Hybrid",
+      "hybrid_model",
+      "hybrid_forecast",
+      "ensemble",
+      "combination",
+      "residual",
+      "forecast_combination"
+    ],
+    "excluded": [
+      "raw dataset contents",
+      "third-party dependencies",
+      "downloaded reference paper"
+    ],
+    "executable_implementation_found": false,
+    "model_artifacts_found": false,
+    "finding": "Only a prose inverse-calibration-MAE combination proposal in the previous audit/design. No user-confirmed implementation or executable configuration.",
+    "supersedes": "Previous audit Hybrid proposal is not authorized as the user's intended model.",
+    "resolution": "User clarified that a new Hybrid must be built; no legacy architecture exists to preserve. New simple architecture stated to user before implementation."
+  },
+  "preserve_split_manifest": "experiments/split_manifest.json",
+  "forecast_origin": "first two calibration origins from the unchanged manifest; fixed pilot baseline configurations, no tuning or final test",
+  "pilot_size_per_dataset": 12,
+  "selection": "four eligible entities from each training-volume tercile, ordered by SHA256(dataset:entity); no validation-based replacement",
+  "seed": 20260922,
+  "lookback": 28,
+  "training_window_stride_days": 7,
+  "neural_epochs": 5,
+  "neural_batch_size": 64,
+  "neural_hidden_dimension": 32,
+  "sarima_order": [
+    1,
+    0,
+    0
+  ],
+  "sarima_seasonal_order": [
+    1,
+    0,
+    0,
+    7
+  ],
+  "sarima_maxiter": 100,
+  "xgboost_n_estimators": 100,
+  "xgboost_max_depth": 3,
+  "xgboost_learning_rate": 0.05,
+  "cpu_threads": 2,
+  "shuffle": false,
+  "max_correction_trials": 1,
+  "correction_policy": "One prespecified pooled additive Hybrid residual-bias offset estimated only from first calibration fold, clipped at zero; compare unchanged and corrected predictions on second calibration fold, report exploratory and do not select for final test.",
+  "full_training_enabled": false,
+  "final_test_enabled": false,
+  "assumed_zero_rule": "After first historical positive purchase, absent entity records on globally recorded days are conditional sales zeros under complete-capture assumption. Mask global gaps; availability remains unknown where not recorded.",
+  "known_future_business_covariates": "none: conservative lagged-only promotions, oil, transactions, customers and holiday/event flags",
+  "evidence_scope": "Second calibration origin evaluated after first calibration origin weight fitting; 12 training-stratified entities; no generalization/significance/superiority claims"
+}

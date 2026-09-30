@@ -1,0 +1,11 @@
+uci calibration_fit Naive
+uci calibration_fit SARIMA
+uci calibration_fit XGBoost
+uci calibration_fit LSTM
+uci calibration_fit Transformer
+uci pilot_validation Naive
+uci pilot_validation SARIMA
+uci pilot_validation XGBoost
+uci pilot_validation LSTM
+uci pilot_validation Transformer
+uci finished pilot

@@ -1,0 +1,5 @@
+candidate,fold_2_equal_domain_normalized_MAE,fit_folds,selection_fold
+inverse_MAE,0.857922403435638,1,2
+pooled_MAE,0.8254785381261573,1,2
+dataset_shrinkage,0.800797565313513,1,2
+regime_shrinkage,0.8002478088951523,1,2

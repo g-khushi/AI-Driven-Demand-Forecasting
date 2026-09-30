@@ -1,0 +1,21 @@
+fold,model,training_seconds,inference_seconds,peak_process_RSS_bytes,artifact_bytes,parameters_or_tree_nodes,fallback_cells,negative_forecasts_clipped,scope
+1,Naive,0.031655499999033,8.32090008771047e-05,325894144,3132,0,24,0,36-series pooled development; CPU2; own-process RSS; feature building and serialization excluded from fit timing
+1,SARIMA,4.467098625002109,0.0530734169988136,602275840,12927458,144,0,0,36-series pooled development; CPU2; own-process RSS; feature building and serialization excluded from fit timing
+1,XGBoost,0.5672634590009693,0.0029249169965623,625049600,246741,2954,0,0,36-series pooled development; CPU2; own-process RSS; feature building and serialization excluded from fit timing
+1,LSTM,5.933493208001892,0.0028240000028745,579731456,126213,30064,0,170,36-series pooled development; CPU2; own-process RSS; feature building and serialization excluded from fit timing
+1,Transformer,45.76722299999892,0.012248749997525,507985920,718037,170948,0,24,36-series pooled development; CPU2; own-process RSS; feature building and serialization excluded from fit timing
+2,Naive,0.0316096249989641,8.2208000094397e-05,467861504,3145,0,48,0,36-series pooled development; CPU2; own-process RSS; feature building and serialization excluded from fit timing
+2,SARIMA,4.36749545800194,0.0449591249998775,890060800,12838489,144,0,0,36-series pooled development; CPU2; own-process RSS; feature building and serialization excluded from fit timing
+2,XGBoost,0.4591452090025996,0.0029924170012236,893648896,246898,2950,0,0,36-series pooled development; CPU2; own-process RSS; feature building and serialization excluded from fit timing
+2,LSTM,5.857535375002044,0.002639000002091,871874560,126213,30064,0,196,36-series pooled development; CPU2; own-process RSS; feature building and serialization excluded from fit timing
+2,Transformer,54.69803733400113,0.0289154169986431,685359104,718037,170948,0,8,36-series pooled development; CPU2; own-process RSS; feature building and serialization excluded from fit timing
+3,Naive,0.036797791999561,9.466600022278726e-05,438370304,3138,0,24,0,36-series pooled development; CPU2; own-process RSS; feature building and serialization excluded from fit timing
+3,SARIMA,4.357060415997694,0.0447762500007229,893747200,12818352,144,0,0,36-series pooled development; CPU2; own-process RSS; feature building and serialization excluded from fit timing
+3,XGBoost,0.4757072500033246,0.0019347499983268,985022464,246895,2948,0,0,36-series pooled development; CPU2; own-process RSS; feature building and serialization excluded from fit timing
+3,LSTM,5.987896291000652,0.0025519579976389,987283456,126213,30064,0,230,36-series pooled development; CPU2; own-process RSS; feature building and serialization excluded from fit timing
+3,Transformer,47.8590299589996,0.0065167080028913,928645120,718037,170948,0,64,36-series pooled development; CPU2; own-process RSS; feature building and serialization excluded from fit timing
+4,Naive,0.0316142089977802,8.079100007307716e-05,513916928,3143,0,24,0,36-series pooled development; CPU2; own-process RSS; feature building and serialization excluded from fit timing
+4,SARIMA,4.583358874999249,0.0456348750012693,797851648,13592738,144,0,0,36-series pooled development; CPU2; own-process RSS; feature building and serialization excluded from fit timing
+4,XGBoost,0.4732495839998591,0.0010563750001892,907476992,247186,2948,0,0,36-series pooled development; CPU2; own-process RSS; feature building and serialization excluded from fit timing
+4,LSTM,6.083509874999436,0.0026100000031874,916373504,126213,30064,0,259,36-series pooled development; CPU2; own-process RSS; feature building and serialization excluded from fit timing
+4,Transformer,66.72983550000208,0.0341402499980176,899006464,718037,170948,0,34,36-series pooled development; CPU2; own-process RSS; feature building and serialization excluded from fit timing

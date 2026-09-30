@@ -1,0 +1,6 @@
+{
+  "status": "superseded_resource_measurement",
+  "reason": "psutil child-process enumeration denied by macOS sandbox; predictions preserved; RAM numbers invalid",
+  "rerun_reason": "correct own-process RSS measurement; no hyperparameter or cohort change",
+  "rerun_prediction_comparison": "PASS: every Dunnhumby prediction equals the initial run exactly"
+}

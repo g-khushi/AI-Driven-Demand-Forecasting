@@ -1,0 +1,40 @@
+{
+  "scope": "Existing 12 training-selected series per dataset; 36 total. Not full-population data.",
+  "datasets": [
+    {
+      "dataset": "dunnhumby",
+      "entities": 12,
+      "rows": 7458,
+      "scorable_rows": 7458,
+      "initial_training_cutoff": 543,
+      "development_end": 655,
+      "final_test_start": 656,
+      "source_panel_sha256": "ff193a11a45ab75c65ce7f01d3239d8262c7df338f55ed319a621c2357147bbc"
+    },
+    {
+      "dataset": "favorita",
+      "entities": 12,
+      "rows": 12059,
+      "scorable_rows": 12027,
+      "initial_training_cutoff": 1496,
+      "development_end": 1624,
+      "final_test_start": 1625,
+      "source_panel_sha256": "bc60b74bdf1948171761437832d4944f92237979b89e64e225af0b4af2a4b16a"
+    },
+    {
+      "dataset": "uci",
+      "entities": 12,
+      "rows": 3801,
+      "scorable_rows": 3069,
+      "initial_training_cutoff": 205,
+      "development_end": 317,
+      "final_test_start": 318,
+      "source_panel_sha256": "8a3831eeda60d79988fd0e48e57407bdf2d17db79caf9b892b1af4e2a9ec607e"
+    }
+  ],
+  "combined_rows": 23318,
+  "units": "Native units preserved. No cross-retailer summation. Training-only entity scaling.",
+  "time": "Independent time axes. No invented Dunnhumby calendar dates. Pooling is retrospective multi-domain training, not synchronized real-time forecasting.",
+  "final_test_included": false,
+  "combined_sha256": "858d62d0b5d55641a3ee2ab2b29002d94e0989be64b209d31f88e1d3099c9fb8"
+}

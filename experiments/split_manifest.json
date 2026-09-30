@@ -1,0 +1,239 @@
+{
+  "status": "proposed_not_executed",
+  "models": [
+    "Naive",
+    "SARIMA",
+    "XGBoost",
+    "LSTM",
+    "Transformer",
+    "Hybrid"
+  ],
+  "training_started": false,
+  "datasets": {
+    "dunnhumby": {
+      "horizon_days": 14,
+      "initial_training_end": "543",
+      "time_axis": "relative_DAY",
+      "folds": {
+        "tuning": [
+          {
+            "origin": "543",
+            "forecast_start": "544",
+            "forecast_end": "557"
+          },
+          {
+            "origin": "557",
+            "forecast_start": "558",
+            "forecast_end": "571"
+          },
+          {
+            "origin": "571",
+            "forecast_start": "572",
+            "forecast_end": "585"
+          },
+          {
+            "origin": "585",
+            "forecast_start": "586",
+            "forecast_end": "599"
+          }
+        ],
+        "calibration": [
+          {
+            "origin": "599",
+            "forecast_start": "600",
+            "forecast_end": "613"
+          },
+          {
+            "origin": "613",
+            "forecast_start": "614",
+            "forecast_end": "627"
+          },
+          {
+            "origin": "627",
+            "forecast_start": "628",
+            "forecast_end": "641"
+          },
+          {
+            "origin": "641",
+            "forecast_start": "642",
+            "forecast_end": "655"
+          }
+        ],
+        "final_test": [
+          {
+            "origin": "655",
+            "forecast_start": "656",
+            "forecast_end": "669"
+          },
+          {
+            "origin": "669",
+            "forecast_start": "670",
+            "forecast_end": "683"
+          },
+          {
+            "origin": "683",
+            "forecast_start": "684",
+            "forecast_end": "697"
+          },
+          {
+            "origin": "697",
+            "forecast_start": "698",
+            "forecast_end": "711"
+          }
+        ]
+      },
+      "test_parameter_updates": false,
+      "past_test_context_updates": "Only after observations become available at later origins; no weight changes."
+    },
+    "favorita": {
+      "horizon_days": 16,
+      "initial_training_end": "2017-02-04",
+      "time_axis": "calendar_date",
+      "folds": {
+        "tuning": [
+          {
+            "origin": "2017-02-04",
+            "forecast_start": "2017-02-05",
+            "forecast_end": "2017-02-20"
+          },
+          {
+            "origin": "2017-02-20",
+            "forecast_start": "2017-02-21",
+            "forecast_end": "2017-03-08"
+          },
+          {
+            "origin": "2017-03-08",
+            "forecast_start": "2017-03-09",
+            "forecast_end": "2017-03-24"
+          },
+          {
+            "origin": "2017-03-24",
+            "forecast_start": "2017-03-25",
+            "forecast_end": "2017-04-09"
+          }
+        ],
+        "calibration": [
+          {
+            "origin": "2017-04-09",
+            "forecast_start": "2017-04-10",
+            "forecast_end": "2017-04-25"
+          },
+          {
+            "origin": "2017-04-25",
+            "forecast_start": "2017-04-26",
+            "forecast_end": "2017-05-11"
+          },
+          {
+            "origin": "2017-05-11",
+            "forecast_start": "2017-05-12",
+            "forecast_end": "2017-05-27"
+          },
+          {
+            "origin": "2017-05-27",
+            "forecast_start": "2017-05-28",
+            "forecast_end": "2017-06-12"
+          }
+        ],
+        "final_test": [
+          {
+            "origin": "2017-06-12",
+            "forecast_start": "2017-06-13",
+            "forecast_end": "2017-06-28"
+          },
+          {
+            "origin": "2017-06-28",
+            "forecast_start": "2017-06-29",
+            "forecast_end": "2017-07-14"
+          },
+          {
+            "origin": "2017-07-14",
+            "forecast_start": "2017-07-15",
+            "forecast_end": "2017-07-30"
+          },
+          {
+            "origin": "2017-07-30",
+            "forecast_start": "2017-07-31",
+            "forecast_end": "2017-08-15"
+          }
+        ]
+      },
+      "test_parameter_updates": false,
+      "past_test_context_updates": "Only after observations become available at later origins; no weight changes."
+    },
+    "uci": {
+      "horizon_days": 14,
+      "initial_training_end": "2011-06-23",
+      "time_axis": "calendar_date",
+      "folds": {
+        "tuning": [
+          {
+            "origin": "2011-06-23",
+            "forecast_start": "2011-06-24",
+            "forecast_end": "2011-07-07"
+          },
+          {
+            "origin": "2011-07-07",
+            "forecast_start": "2011-07-08",
+            "forecast_end": "2011-07-21"
+          },
+          {
+            "origin": "2011-07-21",
+            "forecast_start": "2011-07-22",
+            "forecast_end": "2011-08-04"
+          },
+          {
+            "origin": "2011-08-04",
+            "forecast_start": "2011-08-05",
+            "forecast_end": "2011-08-18"
+          }
+        ],
+        "calibration": [
+          {
+            "origin": "2011-08-18",
+            "forecast_start": "2011-08-19",
+            "forecast_end": "2011-09-01"
+          },
+          {
+            "origin": "2011-09-01",
+            "forecast_start": "2011-09-02",
+            "forecast_end": "2011-09-15"
+          },
+          {
+            "origin": "2011-09-15",
+            "forecast_start": "2011-09-16",
+            "forecast_end": "2011-09-29"
+          },
+          {
+            "origin": "2011-09-29",
+            "forecast_start": "2011-09-30",
+            "forecast_end": "2011-10-13"
+          }
+        ],
+        "final_test": [
+          {
+            "origin": "2011-10-13",
+            "forecast_start": "2011-10-14",
+            "forecast_end": "2011-10-27"
+          },
+          {
+            "origin": "2011-10-27",
+            "forecast_start": "2011-10-28",
+            "forecast_end": "2011-11-10"
+          },
+          {
+            "origin": "2011-11-10",
+            "forecast_start": "2011-11-11",
+            "forecast_end": "2011-11-24"
+          },
+          {
+            "origin": "2011-11-24",
+            "forecast_start": "2011-11-25",
+            "forecast_end": "2011-12-08"
+          }
+        ]
+      },
+      "test_parameter_updates": false,
+      "past_test_context_updates": "Only after observations become available at later origins; no weight changes."
+    }
+  }
+}

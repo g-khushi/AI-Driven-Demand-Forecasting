@@ -1,0 +1,8 @@
+{
+  "status": "pass",
+  "checks": [
+    "Saved-model replay matches all first-origin forecasts within 1e-6",
+    "All model/transform artifacts unchanged across four test origins; SARIMA filter parameters exactly unchanged"
+  ],
+  "failures": []
+}

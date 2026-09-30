@@ -1,0 +1,7 @@
+model,factor,fit_fold,selection_fold,selection_normalized_MAE
+Hybrid_v2,0.0,1,2,0.8002478088951523
+Hybrid_v2,0.5,1,2,0.7934080714471919
+Hybrid_v2,1.0,1,2,0.787848573849257
+MARIOD_forecasting_reconstruction,0.0,1,2,0.9361045479010368
+MARIOD_forecasting_reconstruction,0.5,1,2,0.8814359252981608
+MARIOD_forecasting_reconstruction,1.0,1,2,0.8471064660703749

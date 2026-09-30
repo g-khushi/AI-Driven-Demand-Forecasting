@@ -1,0 +1,64 @@
+{
+  "status": "pass",
+  "created_utc": "2026-09-28T13:28:41.824426+00:00",
+  "checks": [
+    {
+      "dataset": "dunnhumby",
+      "test": "all test targets/covariates cannot alter training scaler, imputation, entity encoding; weights precede test",
+      "status": "pass"
+    },
+    {
+      "dataset": "favorita",
+      "test": "all test targets/covariates cannot alter training scaler, imputation, entity encoding; weights precede test",
+      "status": "pass"
+    },
+    {
+      "dataset": "uci",
+      "test": "all test targets/covariates cannot alter training scaler, imputation, entity encoding; weights precede test",
+      "status": "pass"
+    },
+    {
+      "fold": 1,
+      "test": "all 36 entities: future target/business mutations cannot alter any forecasting input",
+      "status": "pass"
+    },
+    {
+      "fold": 2,
+      "test": "all 36 entities: future target/business mutations cannot alter any forecasting input",
+      "status": "pass"
+    },
+    {
+      "fold": 3,
+      "test": "all 36 entities: future target/business mutations cannot alter any forecasting input",
+      "status": "pass"
+    },
+    {
+      "fold": 4,
+      "test": "all 36 entities: future target/business mutations cannot alter any forecasting input",
+      "status": "pass"
+    },
+    {
+      "test": "every training window label ends before test; input timestamp bounded; no random shuffle",
+      "status": "pass"
+    }
+  ],
+  "checksums": {
+    "src/final_experiment/audit.py": "53900967fc8bf273a45635257ba70fc3b66435c9094ce1513a38e7e2d627abfb",
+    "src/final_experiment/predict.py": "f8c6e760401b3d38c7695f505a7df9eb73d7299ae1eb6a17b7f846ebd5e959be",
+    "src/final_experiment/common.py": "cea607084781ce02d37a73806f650c22c214fc2189fc7089910718f998c65d50",
+    "src/final_experiment/train_once.py": "d6fd18e00ef475f9598c82d84d60475c2788846faf7c2d702122789129f3a2c7",
+    "src/final_experiment/prepare.py": "5279ef974a991196040782be18765db991d04550d422da3662d90086b46764eb",
+    "src/combined_v2/leakage_audit.py": "d6dc38e7142607005dfb6d8f9cff16da822d301205625a118f8077c0e78512b5",
+    "src/combined_v2/models.py": "7bfe347398efe6575ee32df8a43e18e1da81e9deb629a18848bda0ea9ac09b66",
+    "src/combined_v2/hybrid.py": "2cc8273fe29da4522700fee6d1ecb9f6cec149c4788794c22b933dbbeff25687",
+    "src/combined_v2/run_components.py": "c5de260e7741ec5174e6eeb6e3275b65fc9d5216158a400be1a7c9037f724918",
+    "src/combined_v2/prepare_panel.py": "b8e4b6998341123457ba7087a352e133dcb1277f544cab41b72e7ce9044bfe46",
+    "src/combined_v2/data.py": "aeca231d435a9c311c896369fdcb95cca852fef6aa5c5720ca5755d1aa92cbd9",
+    "src/feature_engineering/pilot_features.py": "398f9977547ab4ddb518dc0d179e0429772f75ae072a377f15ac6cf01bf43277",
+    "src/preprocessing/pilot_panels.py": "c51172cf7592d3d1b4bf14510387fd6908d24d3b27fccf96599d52ed155de877",
+    "experiments/final_experiment/configuration_freeze.json": "6e09b241c9367a23283e9a3a119704a4129bf4373c91e1eb60f0c697848b0781",
+    "data/processed/final_experiment/uci_panel.csv.gz": "ef0955e6d833c4d2e9a23d34754a7649f8998235cf15b4703a58e69f9420b87d",
+    "data/processed/final_experiment/favorita_panel.csv.gz": "d3b0432fa0b75d9493aa935b24a9b3177c3c9526c65bc11ae2d618fe18b497b8",
+    "data/processed/final_experiment/dunnhumby_panel.csv.gz": "dec47e2db5bc0359159985fedbb6c8a87e7dd31e1d83539791026cada142317a"
+  }
+}

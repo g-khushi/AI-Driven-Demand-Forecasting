@@ -1,0 +1,392 @@
+{
+  "dataset": "Dunnhumby The Complete Journey",
+  "status": "measured_public_mirror",
+  "archive": {
+    "path": "data/raw/dunnhumby/dunnhumby-complete-journey-data.zip",
+    "bytes": 135859064,
+    "sha256": "324288a8811c4ed86e85415fdee36f3692582e2cc9dd87866c0e333df237f782"
+  },
+  "archive_members": [
+    {
+      "name": "campaign_desc.csv",
+      "bytes_uncompressed": 540,
+      "bytes_compressed": 254
+    },
+    {
+      "name": "campaign_table.csv",
+      "bytes_uncompressed": 95874,
+      "bytes_compressed": 18948
+    },
+    {
+      "name": "causal_data.csv",
+      "bytes_uncompressed": 695858427,
+      "bytes_compressed": 108306090
+    },
+    {
+      "name": "coupon.csv",
+      "bytes_uncompressed": 2822804,
+      "bytes_compressed": 580044
+    },
+    {
+      "name": "coupon_redempt.csv",
+      "bytes_uncompressed": 54108,
+      "bytes_compressed": 12727
+    },
+    {
+      "name": "hh_demographic.csv",
+      "bytes_uncompressed": 44349,
+      "bytes_compressed": 5452
+    },
+    {
+      "name": "product.csv",
+      "bytes_uncompressed": 6429896,
+      "bytes_compressed": 1216719
+    },
+    {
+      "name": "transaction_data.csv",
+      "bytes_uncompressed": 141742346,
+      "bytes_compressed": 25717946
+    }
+  ],
+  "tables": {
+    "campaign_desc.csv": {
+      "rows": 30,
+      "columns": 4,
+      "schema": {
+        "DESCRIPTION": "object",
+        "CAMPAIGN": "int64",
+        "START_DAY": "int64",
+        "END_DAY": "int64"
+      },
+      "missing": {
+        "DESCRIPTION": 0,
+        "CAMPAIGN": 0,
+        "START_DAY": 0,
+        "END_DAY": 0
+      },
+      "distinct_nonmissing": {
+        "DESCRIPTION": 3,
+        "CAMPAIGN": 30,
+        "START_DAY": 27,
+        "END_DAY": 28
+      },
+      "exact_duplicate_excess_rows": 0,
+      "whitespace_only_values": {
+        "DESCRIPTION": 0
+      }
+    },
+    "campaign_table.csv": {
+      "rows": 7208,
+      "columns": 3,
+      "schema": {
+        "DESCRIPTION": "object",
+        "household_key": "int64",
+        "CAMPAIGN": "int64"
+      },
+      "missing": {
+        "DESCRIPTION": 0,
+        "household_key": 0,
+        "CAMPAIGN": 0
+      },
+      "distinct_nonmissing": {
+        "DESCRIPTION": 3,
+        "household_key": 1584,
+        "CAMPAIGN": 30
+      },
+      "exact_duplicate_excess_rows": 0,
+      "whitespace_only_values": {
+        "DESCRIPTION": 0
+      }
+    },
+    "coupon.csv": {
+      "rows": 124548,
+      "columns": 3,
+      "schema": {
+        "COUPON_UPC": "int64",
+        "PRODUCT_ID": "int64",
+        "CAMPAIGN": "int64"
+      },
+      "missing": {
+        "COUPON_UPC": 0,
+        "PRODUCT_ID": 0,
+        "CAMPAIGN": 0
+      },
+      "distinct_nonmissing": {
+        "COUPON_UPC": 1135,
+        "PRODUCT_ID": 44133,
+        "CAMPAIGN": 30
+      },
+      "exact_duplicate_excess_rows": 5164,
+      "whitespace_only_values": {}
+    },
+    "coupon_redempt.csv": {
+      "rows": 2318,
+      "columns": 4,
+      "schema": {
+        "household_key": "int64",
+        "DAY": "int64",
+        "COUPON_UPC": "int64",
+        "CAMPAIGN": "int64"
+      },
+      "missing": {
+        "household_key": 0,
+        "DAY": 0,
+        "COUPON_UPC": 0,
+        "CAMPAIGN": 0
+      },
+      "distinct_nonmissing": {
+        "household_key": 434,
+        "DAY": 328,
+        "COUPON_UPC": 556,
+        "CAMPAIGN": 30
+      },
+      "exact_duplicate_excess_rows": 0,
+      "whitespace_only_values": {}
+    },
+    "hh_demographic.csv": {
+      "rows": 801,
+      "columns": 8,
+      "schema": {
+        "AGE_DESC": "object",
+        "MARITAL_STATUS_CODE": "object",
+        "INCOME_DESC": "object",
+        "HOMEOWNER_DESC": "object",
+        "HH_COMP_DESC": "object",
+        "HOUSEHOLD_SIZE_DESC": "object",
+        "KID_CATEGORY_DESC": "object",
+        "household_key": "int64"
+      },
+      "missing": {
+        "AGE_DESC": 0,
+        "MARITAL_STATUS_CODE": 0,
+        "INCOME_DESC": 0,
+        "HOMEOWNER_DESC": 0,
+        "HH_COMP_DESC": 0,
+        "HOUSEHOLD_SIZE_DESC": 0,
+        "KID_CATEGORY_DESC": 0,
+        "household_key": 0
+      },
+      "distinct_nonmissing": {
+        "AGE_DESC": 6,
+        "MARITAL_STATUS_CODE": 3,
+        "INCOME_DESC": 12,
+        "HOMEOWNER_DESC": 5,
+        "HH_COMP_DESC": 6,
+        "HOUSEHOLD_SIZE_DESC": 5,
+        "KID_CATEGORY_DESC": 4,
+        "household_key": 801
+      },
+      "exact_duplicate_excess_rows": 0,
+      "whitespace_only_values": {
+        "AGE_DESC": 0,
+        "MARITAL_STATUS_CODE": 0,
+        "INCOME_DESC": 0,
+        "HOMEOWNER_DESC": 0,
+        "HH_COMP_DESC": 0,
+        "HOUSEHOLD_SIZE_DESC": 0,
+        "KID_CATEGORY_DESC": 0
+      }
+    },
+    "product.csv": {
+      "rows": 92353,
+      "columns": 7,
+      "schema": {
+        "PRODUCT_ID": "int64",
+        "MANUFACTURER": "int64",
+        "DEPARTMENT": "object",
+        "BRAND": "object",
+        "COMMODITY_DESC": "object",
+        "SUB_COMMODITY_DESC": "object",
+        "CURR_SIZE_OF_PRODUCT": "object"
+      },
+      "missing": {
+        "PRODUCT_ID": 0,
+        "MANUFACTURER": 0,
+        "DEPARTMENT": 0,
+        "BRAND": 0,
+        "COMMODITY_DESC": 0,
+        "SUB_COMMODITY_DESC": 0,
+        "CURR_SIZE_OF_PRODUCT": 0
+      },
+      "distinct_nonmissing": {
+        "PRODUCT_ID": 92353,
+        "MANUFACTURER": 6476,
+        "DEPARTMENT": 44,
+        "BRAND": 2,
+        "COMMODITY_DESC": 308,
+        "SUB_COMMODITY_DESC": 2383,
+        "CURR_SIZE_OF_PRODUCT": 4345
+      },
+      "exact_duplicate_excess_rows": 0,
+      "whitespace_only_values": {
+        "DEPARTMENT": 15,
+        "BRAND": 0,
+        "COMMODITY_DESC": 15,
+        "SUB_COMMODITY_DESC": 15,
+        "CURR_SIZE_OF_PRODUCT": 30607
+      },
+      "product_id_duplicate_excess": 0,
+      "department_labels": [
+        " ",
+        "AUTOMOTIVE",
+        "CHARITABLE CONT",
+        "CHEF SHOPPE",
+        "CNTRL/STORE SUP",
+        "COSMETICS",
+        "COUP/STR & MFG",
+        "DAIRY DELI",
+        "DELI",
+        "DELI/SNACK BAR",
+        "DRUG GM",
+        "ELECT &PLUMBING",
+        "FLORAL",
+        "FROZEN GROCERY",
+        "GARDEN CENTER",
+        "GM MERCH EXP",
+        "GRO BAKERY",
+        "GROCERY",
+        "HBC",
+        "HOUSEWARES",
+        "KIOSK-GAS",
+        "MEAT",
+        "MEAT-PCKGD",
+        "MEAT-WHSE",
+        "MISC SALES TRAN",
+        "MISC. TRANS.",
+        "NUTRITION",
+        "PASTRY",
+        "PHARMACY SUPPLY",
+        "PHOTO",
+        "PORK",
+        "POSTAL CENTER",
+        "PROD-WHS SALES",
+        "PRODUCE",
+        "RESTAURANT",
+        "RX",
+        "SALAD BAR",
+        "SEAFOOD",
+        "SEAFOOD-PCKGD",
+        "SPIRITS",
+        "TOYS",
+        "TRAVEL & LEISUR",
+        "VIDEO",
+        "VIDEO RENTAL"
+      ]
+    },
+    "transaction_data.csv": {
+      "rows": 2595732,
+      "columns": 12,
+      "schema": {
+        "household_key": "int64",
+        "BASKET_ID": "int64",
+        "DAY": "int64",
+        "PRODUCT_ID": "int64",
+        "QUANTITY": "int64",
+        "SALES_VALUE": "float64",
+        "STORE_ID": "int64",
+        "RETAIL_DISC": "float64",
+        "TRANS_TIME": "int64",
+        "WEEK_NO": "int64",
+        "COUPON_DISC": "float64",
+        "COUPON_MATCH_DISC": "float64"
+      },
+      "missing": {
+        "household_key": 0,
+        "BASKET_ID": 0,
+        "DAY": 0,
+        "PRODUCT_ID": 0,
+        "QUANTITY": 0,
+        "SALES_VALUE": 0,
+        "STORE_ID": 0,
+        "RETAIL_DISC": 0,
+        "TRANS_TIME": 0,
+        "WEEK_NO": 0,
+        "COUPON_DISC": 0,
+        "COUPON_MATCH_DISC": 0
+      },
+      "distinct_nonmissing": {
+        "household_key": 2500,
+        "BASKET_ID": 276484,
+        "DAY": 711,
+        "PRODUCT_ID": 92339,
+        "QUANTITY": 11746,
+        "SALES_VALUE": 5502,
+        "STORE_ID": 582,
+        "RETAIL_DISC": 2414,
+        "TRANS_TIME": 1440,
+        "WEEK_NO": 102,
+        "COUPON_DISC": 415,
+        "COUPON_MATCH_DISC": 80
+      },
+      "exact_duplicate_excess_rows": 0,
+      "whitespace_only_values": {}
+    },
+    "causal_data.csv": {
+      "rows": 36786524,
+      "columns": 5,
+      "missing": {
+        "PRODUCT_ID": 0,
+        "STORE_ID": 0,
+        "WEEK_NO": 0,
+        "display": 0,
+        "mailer": 0
+      },
+      "distinct_nonmissing": {
+        "PRODUCT_ID": 68377,
+        "STORE_ID": 115,
+        "WEEK_NO": 93,
+        "display": 10,
+        "mailer": 11
+      },
+      "within_chunk_exact_duplicate_excess_rows_lower_bound": 0,
+      "full_cross_chunk_duplicate_check": "Complete; collision-free bounded integer encoding and full sort.",
+      "exact_duplicate_excess_rows": 0,
+      "product_store_week_duplicate_excess_rows": 15245
+    }
+  },
+  "rows": 2595732,
+  "columns": 12,
+  "day_min": 1,
+  "day_max": 711,
+  "days_with_records": 711,
+  "week_min": 1,
+  "week_max": 102,
+  "weeks_with_records": 102,
+  "calendar_date_range": null,
+  "stores": 582,
+  "products": 92339,
+  "product_master_rows": 92353,
+  "customers": 2500,
+  "baskets": 276484,
+  "departments": 44,
+  "commodities": 308,
+  "subcommodities": 2383,
+  "negative_quantity_rows": 0,
+  "zero_quantity_rows": 14466,
+  "quantity_min": 0,
+  "quantity_max": 89638,
+  "negative_sales_value_rows": 0,
+  "zero_sales_value_rows": 18850,
+  "positive_quantity_zero_sales_rows": 4451,
+  "transaction_product_orphans": 0,
+  "discount_nonzero_rows": {
+    "RETAIL_DISC": 1303062,
+    "COUPON_DISC": 36422,
+    "COUPON_MATCH_DISC": 17449
+  },
+  "inventory": "not provided",
+  "holidays": "not provided; calendar anchor unverified",
+  "returns": "no explicit return/cancellation field",
+  "unit_price": "not explicit; SALES_VALUE/QUANTITY is realized unit revenue for positive quantity only",
+  "demand_scope": "Purchases by the sampled household panel, not complete store sales.",
+  "positive_product_day_panel": {
+    "observed_entity_days": 1842352,
+    "observed_zero_sum_entity_days": 0,
+    "within_first_last_observation_possible_days": 21965280,
+    "absent_entity_days_within_first_last_observation": 20122928,
+    "interpretation": "Absent records are not proven zero demand; no availability/inventory flag.",
+    "date_note": "Gap computation uses integer DAY distances, not actual calendar dates."
+  },
+  "store_product_pairs": 940071,
+  "households_without_demographics": 1699
+}

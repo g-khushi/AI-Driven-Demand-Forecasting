@@ -1,0 +1,11 @@
+model,equal_dataset_mean_normalized_MAE,evaluated_fold_count
+Hybrid_reference,0.9489530688819059,2
+Hybrid_v2,0.9330960024399921,2
+Hybrid_v2_corrected,0.9266851467985502,2
+LSTM,0.9693174991545375,2
+MARIOD_forecasting_reconstruction,0.9611716782565324,2
+MARIOD_forecasting_reconstruction_corrected,0.8968008004161915,2
+Naive,1.1822501103879868,2
+SARIMA,1.0481559417071082,2
+Transformer,0.9611716782565324,2
+XGBoost,1.018954620507724,2

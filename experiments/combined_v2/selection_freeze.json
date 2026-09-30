@@ -1,0 +1,151 @@
+{
+  "created_utc": "2026-09-28T11:57:53.974943+00:00",
+  "training_predictions_sha256": {
+    "project/results/combined_v2/fold_1_component_predictions.csv": "b0ec64e1c89ca3aa6fad7ccc901928d6d1f86ce01675e690a4cbc257a727a299",
+    "project/results/combined_v2/fold_2_component_predictions.csv": "aae2e7c66f056edce3cd4f40c45dbe13126720c69957fb825d9e16aee87500e3"
+  },
+  "selection_only_folds": [
+    1,
+    2
+  ],
+  "hybrid_trials": [
+    {
+      "method": "inverse_MAE",
+      "score": 0.857922403435638
+    },
+    {
+      "method": "pooled_MAE",
+      "score": 0.8254785381261573
+    },
+    {
+      "method": "dataset_shrinkage",
+      "score": 0.800797565313513
+    },
+    {
+      "method": "regime_shrinkage",
+      "score": 0.8002478088951523
+    }
+  ],
+  "selected_method": "regime_shrinkage",
+  "frozen_hybrid": {
+    "method": "regime_shrinkage",
+    "max_fit_fold": 2,
+    "pooled_weights": [
+      0.10005169461564344,
+      0.01,
+      0.01,
+      0.8173426188700632,
+      0.06260568651429338
+    ],
+    "groups": {
+      "dunnhumby": [
+        0.032512923653910855,
+        0.01,
+        0.01,
+        0.9243356547175158,
+        0.023151421628573345
+      ],
+      "dunnhumby::intermittent": [
+        0.02125646182695543,
+        0.01,
+        0.01,
+        0.9421678273587579,
+        0.016575710814286673
+      ],
+      "dunnhumby::frequent": [
+        0.07146861661575737,
+        0.3771868729337245,
+        0.01,
+        0.5247687996362314,
+        0.016575710814286673
+      ],
+      "favorita": [
+        0.41939376542376205,
+        0.01,
+        0.07237622910402611,
+        0.31600654714848564,
+        0.18222345832372622
+      ],
+      "favorita::intermittent": [
+        0.689696882711881,
+        0.01,
+        0.04118811455201305,
+        0.16300327357424282,
+        0.09611172916186311
+      ],
+      "favorita::frequent": [
+        0.40071254415786384,
+        0.19672071828069407,
+        0.04118811455201305,
+        0.26526689384756597,
+        0.09611172916186311
+      ],
+      "uci": [
+        0.032512923653910855,
+        0.01,
+        0.01,
+        0.8678512145609,
+        0.07963586178518922
+      ],
+      "uci::intermittent": [
+        0.02125646182695543,
+        0.01,
+        0.01,
+        0.7372580349080986,
+        0.22148550326494598
+      ],
+      "uci::frequent": [
+        0.02125646182695543,
+        0.01,
+        0.01,
+        0.8876227640233033,
+        0.0711207741497413
+      ]
+    },
+    "diagnostics": {
+      "dunnhumby": {
+        "max_label": 627,
+        "cells": 336
+      },
+      "favorita": {
+        "max_label": 1592,
+        "cells": 384
+      },
+      "uci": {
+        "max_label": 289,
+        "cells": 276
+      }
+    },
+    "component_order": [
+      "Naive",
+      "SARIMA",
+      "XGBoost",
+      "LSTM",
+      "Transformer"
+    ]
+  },
+  "correction_trials": [
+    {
+      "factor": 0.0,
+      "score": 0.8002478088951523
+    },
+    {
+      "factor": 0.5,
+      "score": 0.7934080714471919
+    },
+    {
+      "factor": 1.0,
+      "score": 0.787848573849257
+    }
+  ],
+  "selected_correction_factor": 1.0,
+  "frozen_correction_offsets": {
+    "dunnhumby": -0.021731852750925505,
+    "favorita": -0.13115991131509422,
+    "uci": -0.0555096392655398
+  },
+  "later_predictions_present_at_freeze": [
+    false,
+    false
+  ]
+}

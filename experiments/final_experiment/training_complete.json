@@ -1,0 +1,13 @@
+{
+  "created_utc": "2026-09-28T13:30:17.712973+00:00",
+  "parameter_updates_after_this_point": false,
+  "model_checksums": {
+    "models/final_experiment/fold_1_SARIMA.pkl.gz": "946ca38978b6593574a329713f061e795d309ceec048a9f49c0bcee4b4177c2a",
+    "models/final_experiment/fold_1_XGBoost.json": "ebe8cd70c90ebff74d0440e5d5260195463c47f0870484ba592ba4d505e94479",
+    "models/final_experiment/fold_1_Naive.json": "49b388f03350289de81d7f89a2bc4c20a59447885e5a56a5e258e8c140186452",
+    "models/final_experiment/fold_1_Transformer.pt": "f86c19d510407e8cd20a114ec3a29d0eba38e4b2deb9906cc0f6c9752be7469c",
+    "models/final_experiment/fold_1_transform_state.json": "c750ccf08ef1b84cfe28bfeb33db646f5d5a0c06f07f7dc48ff9af4b67ae3a64",
+    "models/final_experiment/fold_1_inference_inputs.npz": "320c5d97bb12477e73b02f5526510789bc06a2a753ae7ca96898461e8aa99649",
+    "models/final_experiment/fold_1_LSTM.pt": "b518d0c5b1fb505f4d8be4113483cf2d77c52a4a6ff166f38ba9a8ab1c1e5174"
+  }
+}

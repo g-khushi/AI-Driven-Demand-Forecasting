@@ -1,0 +1,145 @@
+{
+  "status": "pass",
+  "checks": [
+    {
+      "fold": 1,
+      "model": "Naive",
+      "cells": 528,
+      "status": "pass",
+      "tolerance": 1e-06
+    },
+    {
+      "fold": 1,
+      "model": "SARIMA",
+      "cells": 528,
+      "status": "pass",
+      "tolerance": 1e-06
+    },
+    {
+      "fold": 1,
+      "model": "XGBoost",
+      "cells": 528,
+      "status": "pass",
+      "tolerance": 1e-06
+    },
+    {
+      "fold": 1,
+      "model": "LSTM",
+      "cells": 528,
+      "status": "pass",
+      "tolerance": 1e-06
+    },
+    {
+      "fold": 1,
+      "model": "Transformer",
+      "cells": 528,
+      "status": "pass",
+      "tolerance": 1e-06
+    },
+    {
+      "fold": 2,
+      "model": "Naive",
+      "cells": 528,
+      "status": "pass",
+      "tolerance": 1e-06
+    },
+    {
+      "fold": 2,
+      "model": "SARIMA",
+      "cells": 528,
+      "status": "pass",
+      "tolerance": 1e-06
+    },
+    {
+      "fold": 2,
+      "model": "XGBoost",
+      "cells": 528,
+      "status": "pass",
+      "tolerance": 1e-06
+    },
+    {
+      "fold": 2,
+      "model": "LSTM",
+      "cells": 528,
+      "status": "pass",
+      "tolerance": 1e-06
+    },
+    {
+      "fold": 2,
+      "model": "Transformer",
+      "cells": 528,
+      "status": "pass",
+      "tolerance": 1e-06
+    },
+    {
+      "fold": 3,
+      "model": "Naive",
+      "cells": 528,
+      "status": "pass",
+      "tolerance": 1e-06
+    },
+    {
+      "fold": 3,
+      "model": "SARIMA",
+      "cells": 528,
+      "status": "pass",
+      "tolerance": 1e-06
+    },
+    {
+      "fold": 3,
+      "model": "XGBoost",
+      "cells": 528,
+      "status": "pass",
+      "tolerance": 1e-06
+    },
+    {
+      "fold": 3,
+      "model": "LSTM",
+      "cells": 528,
+      "status": "pass",
+      "tolerance": 1e-06
+    },
+    {
+      "fold": 3,
+      "model": "Transformer",
+      "cells": 528,
+      "status": "pass",
+      "tolerance": 1e-06
+    },
+    {
+      "fold": 4,
+      "model": "Naive",
+      "cells": 528,
+      "status": "pass",
+      "tolerance": 1e-06
+    },
+    {
+      "fold": 4,
+      "model": "SARIMA",
+      "cells": 528,
+      "status": "pass",
+      "tolerance": 1e-06
+    },
+    {
+      "fold": 4,
+      "model": "XGBoost",
+      "cells": 528,
+      "status": "pass",
+      "tolerance": 1e-06
+    },
+    {
+      "fold": 4,
+      "model": "LSTM",
+      "cells": 528,
+      "status": "pass",
+      "tolerance": 1e-06
+    },
+    {
+      "fold": 4,
+      "model": "Transformer",
+      "cells": 528,
+      "status": "pass",
+      "tolerance": 1e-06
+    }
+  ]
+}

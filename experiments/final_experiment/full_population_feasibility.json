@@ -1,0 +1,31 @@
+{
+  "scope": "Resource assessment for current materializing implementation, not a claim that a future streaming implementation requires this RAM",
+  "datasets": [
+    {
+      "dataset": "dunnhumby",
+      "eligible_entities": 3778,
+      "conservative_training_windows": 299750,
+      "direct_feature_array_bytes_float64": 1918400000,
+      "sequence_array_bytes_float32": 402864000
+    },
+    {
+      "dataset": "favorita",
+      "eligible_entities": 147289,
+      "conservative_training_windows": 23726501,
+      "direct_feature_array_bytes_float64": 151849606400,
+      "sequence_array_bytes_float32": 31888417344
+    },
+    {
+      "dataset": "uci",
+      "eligible_entities": 656,
+      "conservative_training_windows": 22894,
+      "direct_feature_array_bytes_float64": 146521600,
+      "sequence_array_bytes_float32": 30769536
+    }
+  ],
+  "feature_arrays_alone_GiB": 173.44633013010025,
+  "machine_RAM_GiB": 8,
+  "free_disk_GiB": 4.673225402832031,
+  "full_population_status": "not_run_resource_blocked",
+  "necessary_next_step": "Out-of-core training implementation and additional compute/storage; full MARIOD additionally requires missing inventory/sensor/graph data."
+}

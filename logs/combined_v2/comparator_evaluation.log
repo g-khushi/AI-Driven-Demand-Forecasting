@@ -1,0 +1,32 @@
+{
+  "status": "combined_hybrid_development_complete",
+  "comparator_enabled": true,
+  "full_MARIOD_reproduced": false,
+  "final_test_used": false,
+  "hybrid_selected_method": "regime_shrinkage",
+  "correction_choices": {
+    "Hybrid_v2": {
+      "factor": 1.0,
+      "offsets": {
+        "dunnhumby": -0.021731852750925505,
+        "favorita": -0.13115991131509422,
+        "uci": -0.0555096392655398
+      },
+      "fit_max_fold": 2,
+      "selection": "fold 2 only; ties prefer smaller correction",
+      "correction": "add scale times dataset median normalized residual times selected shrinkage, then clip at zero"
+    },
+    "MARIOD_forecasting_reconstruction": {
+      "factor": 1.0,
+      "offsets": {
+        "dunnhumby": -0.3176625382180182,
+        "favorita": -0.3204975953562794,
+        "uci": -0.3856650475793691
+      },
+      "fit_max_fold": 2,
+      "selection": "fold 2 only; ties prefer smaller correction",
+      "correction": "add scale times dataset median normalized residual times selected shrinkage, then clip at zero"
+    }
+  },
+  "scope": "36 fixed series, two later calibration evaluation origins; not full-population or final-test results"
+}

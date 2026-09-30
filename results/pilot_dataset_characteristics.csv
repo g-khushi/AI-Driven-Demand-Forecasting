@@ -1,0 +1,4 @@
+dataset,raw_original_rows_from_completed_audit,development_input_rows,eligible_entity_count,pilot_entity_count,final_model_ready_rows,observed_panel_rows,assumed_zero_rows,masked_global_gap_rows,panel_t_min,panel_t_max
+dunnhumby,2595732,2246408,3778,12,7122,2116,5006,0,1,627
+favorita,125497040,115351331,147289,12,11675,8733,2910,32,2,1592
+uci,541909,343799,656,12,3465,1618,1163,684,1,289

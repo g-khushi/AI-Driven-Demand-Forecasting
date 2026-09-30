@@ -1,0 +1,13 @@
+{
+  "primary_metric": "equal-dataset normalized MAE",
+  "Hybrid": 0.782770972516011,
+  "forecasting_only_comparator": 0.803169403905981,
+  "Hybrid_error_reduction_percent": 2.5397420881283765,
+  "Hybrid_better_on_primary_metric": true,
+  "all_datasets_MAE_improved": false,
+  "comparison_scope": "Corrected Hybrid vs corrected compact forecasting-only reconstruction. Not full MARIOD. 36 fixed series and four original final-test origins per source.",
+  "full_population_completed": false,
+  "full_population_blocker": "Current feature arrays alone approximately 173.4 GiB versus 8 GiB RAM; streaming implementation and additional resources needed.",
+  "statistical_significance_established": false,
+  "post_test_model_changes": false
+}

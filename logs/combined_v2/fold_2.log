@@ -1,0 +1,6 @@
+fold 2 Naive
+fold 2 SARIMA
+fold 2 XGBoost
+fold 2 LSTM
+fold 2 Transformer
+fold 2 complete

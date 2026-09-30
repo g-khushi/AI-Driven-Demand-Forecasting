@@ -1,0 +1,6 @@
+fold,model,training_seconds,inference_seconds,peak_process_RSS_bytes,artifact_bytes,parameters_or_tree_nodes,fallback_cells,negative_forecasts_clipped,scope
+3,Naive,0.036797791999561014,9.466600022278726e-05,438370304,3138,0,24,0,36-series pooled development; CPU2; own-process RSS; feature building and serialization excluded from fit timing
+3,SARIMA,4.357060415997694,0.04477625000072294,893747200,12818352,144,0,0,36-series pooled development; CPU2; own-process RSS; feature building and serialization excluded from fit timing
+3,XGBoost,0.4757072500033246,0.001934749998326879,985022464,246895,2948,0,0,36-series pooled development; CPU2; own-process RSS; feature building and serialization excluded from fit timing
+3,LSTM,5.987896291000652,0.002551957997638965,987283456,126213,30064,0,230,36-series pooled development; CPU2; own-process RSS; feature building and serialization excluded from fit timing
+3,Transformer,47.8590299589996,0.0065167080028913915,928645120,718037,170948,0,64,36-series pooled development; CPU2; own-process RSS; feature building and serialization excluded from fit timing

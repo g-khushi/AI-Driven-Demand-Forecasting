@@ -1,0 +1,16 @@
+Dunnhumby archive [{'name': 'campaign_desc.csv', 'bytes_uncompressed': 540, 'bytes_compressed': 254}, {'name': 'campaign_table.csv', 'bytes_uncompressed': 95874, 'bytes_compressed': 18948}, {'name': 'causal_data.csv', 'bytes_uncompressed': 695858427, 'bytes_compressed': 108306090}, {'name': 'coupon.csv', 'bytes_uncompressed': 2822804, 'bytes_compressed': 580044}, {'name': 'coupon_redempt.csv', 'bytes_uncompressed': 54108, 'bytes_compressed': 12727}, {'name': 'hh_demographic.csv', 'bytes_uncompressed': 44349, 'bytes_compressed': 5452}, {'name': 'product.csv', 'bytes_uncompressed': 6429896, 'bytes_compressed': 1216719}, {'name': 'transaction_data.csv', 'bytes_uncompressed': 141742346, 'bytes_compressed': 25717946}]
+Dunnhumby reading campaign_desc.csv
+Dunnhumby reading campaign_table.csv
+Dunnhumby reading coupon.csv
+Dunnhumby reading coupon_redempt.csv
+Dunnhumby reading hh_demographic.csv
+Dunnhumby reading product.csv
+Dunnhumby reading transaction_data.csv
+Dunnhumby causal rows 5000000
+Dunnhumby causal rows 10000000
+Dunnhumby causal rows 15000000
+Dunnhumby causal rows 20000000
+Dunnhumby causal rows 25000000
+Dunnhumby causal rows 30000000
+Dunnhumby causal rows 35000000
+Dunnhumby complete 2595732

@@ -1,0 +1,73 @@
+{
+  "dataset": "uci",
+  "raw_original_rows_from_completed_audit": 541909,
+  "development_input_rows": 343799,
+  "quantity_before": 3340558,
+  "development_cutoff": 289,
+  "eligibility_cutoff": 205,
+  "stages": [
+    {
+      "rule": "identical_line_excess",
+      "rows_before": 343799,
+      "rows_removed": 2669,
+      "rows_retained": 341130,
+      "quantity_before": 3340558.0,
+      "quantity_after": 3331471.0
+    },
+    {
+      "rule": "cancelled_invoice",
+      "rows_before": 341130,
+      "rows_removed": 6165,
+      "rows_retained": 334965,
+      "quantity_before": 3331471.0,
+      "quantity_after": 3482340.0
+    },
+    {
+      "rule": "remaining_nonpositive_quantity",
+      "rows_before": 334965,
+      "rows_removed": 957,
+      "rows_retained": 334008,
+      "quantity_before": 3482340.0,
+      "quantity_after": 3627983.0
+    },
+    {
+      "rule": "nonpositive_price",
+      "rows_before": 334008,
+      "rows_removed": 896,
+      "rows_retained": 333112,
+      "quantity_before": 3627983.0,
+      "quantity_after": 3580712.0
+    },
+    {
+      "rule": "explicit_nonmerchandise_code",
+      "rows_before": 333112,
+      "rows_removed": 1631,
+      "rows_retained": 331481,
+      "quantity_before": 3580712.0,
+      "quantity_after": 3577072.0
+    }
+  ],
+  "eligible_entity_count": 656,
+  "excluded_entity_count": 2838,
+  "clean_development_rows": 331481,
+  "quantity_after": 3577072.0,
+  "negative_quantity_rows": 7145,
+  "missing_customer_rows_retained": 90613,
+  "missing_description_rows_retained": 0,
+  "pilot_transaction_rows": 2946,
+  "pilot_quantity_before_aggregation": 28989.0,
+  "aggregation_rows": 1618,
+  "aggregation_quantity": 28989.0,
+  "runtime_seconds": 24.573862666002242,
+  "pilot_entity_count": 12,
+  "final_model_ready_rows": 3465,
+  "panel_t_min": 1,
+  "panel_t_max": 289,
+  "observed_panel_rows": 1618,
+  "assumed_zero_rows": 1163,
+  "masked_global_gap_rows": 684,
+  "unknown_availability_rows": 1847,
+  "panel_quantity": 28989.0,
+  "scope": "12-entity deterministic development pilot; not full-population preprocessing",
+  "final_test_access": "No final-test rows included in transformations, features or model panels"
+}

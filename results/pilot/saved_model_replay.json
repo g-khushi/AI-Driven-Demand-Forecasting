@@ -1,0 +1,132 @@
+{
+  "status": "pass",
+  "checks": [
+    {
+      "dataset": "dunnhumby",
+      "model": "Naive",
+      "status": "pass",
+      "cells": 168,
+      "tolerance": 1e-06
+    },
+    {
+      "dataset": "dunnhumby",
+      "model": "SARIMA",
+      "status": "pass",
+      "cells": 168,
+      "tolerance": 1e-06
+    },
+    {
+      "dataset": "dunnhumby",
+      "model": "XGBoost",
+      "status": "pass",
+      "cells": 168,
+      "tolerance": 1e-06
+    },
+    {
+      "dataset": "dunnhumby",
+      "model": "LSTM",
+      "status": "pass",
+      "cells": 168,
+      "tolerance": 1e-06
+    },
+    {
+      "dataset": "dunnhumby",
+      "model": "Transformer",
+      "status": "pass",
+      "cells": 168,
+      "tolerance": 1e-06
+    },
+    {
+      "dataset": "dunnhumby",
+      "model": "Hybrid",
+      "status": "pass",
+      "cells": 168,
+      "tolerance": 1e-06
+    },
+    {
+      "dataset": "favorita",
+      "model": "Naive",
+      "status": "pass",
+      "cells": 192,
+      "tolerance": 1e-06
+    },
+    {
+      "dataset": "favorita",
+      "model": "SARIMA",
+      "status": "pass",
+      "cells": 192,
+      "tolerance": 1e-06
+    },
+    {
+      "dataset": "favorita",
+      "model": "XGBoost",
+      "status": "pass",
+      "cells": 192,
+      "tolerance": 1e-06
+    },
+    {
+      "dataset": "favorita",
+      "model": "LSTM",
+      "status": "pass",
+      "cells": 192,
+      "tolerance": 1e-06
+    },
+    {
+      "dataset": "favorita",
+      "model": "Transformer",
+      "status": "pass",
+      "cells": 192,
+      "tolerance": 1e-06
+    },
+    {
+      "dataset": "favorita",
+      "model": "Hybrid",
+      "status": "pass",
+      "cells": 192,
+      "tolerance": 1e-06
+    },
+    {
+      "dataset": "uci",
+      "model": "Naive",
+      "status": "pass",
+      "cells": 168,
+      "tolerance": 1e-06
+    },
+    {
+      "dataset": "uci",
+      "model": "SARIMA",
+      "status": "pass",
+      "cells": 168,
+      "tolerance": 1e-06
+    },
+    {
+      "dataset": "uci",
+      "model": "XGBoost",
+      "status": "pass",
+      "cells": 168,
+      "tolerance": 1e-06
+    },
+    {
+      "dataset": "uci",
+      "model": "LSTM",
+      "status": "pass",
+      "cells": 168,
+      "tolerance": 1e-06
+    },
+    {
+      "dataset": "uci",
+      "model": "Transformer",
+      "status": "pass",
+      "cells": 168,
+      "tolerance": 1e-06
+    },
+    {
+      "dataset": "uci",
+      "model": "Hybrid",
+      "status": "pass",
+      "cells": 168,
+      "tolerance": 1e-06
+    }
+  ],
+  "scope": "All second-fold forecasts including masked dates; no fitting; trusted local artifacts only"
+}

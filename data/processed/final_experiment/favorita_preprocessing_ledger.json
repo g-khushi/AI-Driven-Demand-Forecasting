@@ -1,0 +1,93 @@
+{
+  "dataset": "favorita",
+  "raw_original_rows_from_completed_audit": 125497040,
+  "development_input_rows": 125497040,
+  "quantity_before": 1073610268.7877998,
+  "quantity_after": 1073753849.6152997,
+  "negative_quantity_rows": 7795,
+  "missing_onpromotion_rows": 21657651,
+  "rows_removed": 0,
+  "rows_retained": 125497040,
+  "negative_rule": "unit_sales retained separately; demand=max(unit_sales,0)",
+  "fractional_sales": "preserved float64, never rounded",
+  "eligibility_cutoff": 1496,
+  "development_cutoff": 1688,
+  "eligible_entity_count": 147289,
+  "excluded_entity_count": 16535,
+  "duplicate_policy": "Completed full audit proved unique date/store/item keys; pilot keys asserted again.",
+  "returns_quantity": -143580.8275,
+  "joins": [
+    {
+      "table": "items",
+      "keys": [
+        "item_nbr"
+      ],
+      "rows_before": 9373,
+      "rows_after": 9373,
+      "quantity_before": 67616.0,
+      "quantity_after": 67616.0,
+      "cardinality": "many_to_one"
+    },
+    {
+      "table": "stores",
+      "keys": [
+        "store_nbr"
+      ],
+      "rows_before": 9373,
+      "rows_after": 9373,
+      "quantity_before": 67616.0,
+      "quantity_after": 67616.0,
+      "cardinality": "many_to_one"
+    },
+    {
+      "table": "transactions",
+      "keys": [
+        "t",
+        "store_nbr"
+      ],
+      "rows_before": 9373,
+      "rows_after": 9373,
+      "quantity_before": 67616.0,
+      "quantity_after": 67616.0,
+      "cardinality": "many_to_one"
+    },
+    {
+      "table": "oil_past_forward_fill",
+      "keys": [
+        "t"
+      ],
+      "rows_before": 9373,
+      "rows_after": 9373,
+      "quantity_before": 67616.0,
+      "quantity_after": 67616.0,
+      "cardinality": "many_to_one"
+    },
+    {
+      "table": "holidays_aggregated_by_applicable_locality",
+      "keys": [
+        "t",
+        "store_nbr"
+      ],
+      "rows_before": 9373,
+      "rows_after": 9373,
+      "quantity_before": 67616.0,
+      "quantity_after": 67616.0,
+      "cardinality": "many_to_one"
+    }
+  ],
+  "pilot_sales_rows": 9373,
+  "pilot_quantity_before_joins": 67616.0,
+  "pilot_quantity_after_joins": 67616.0,
+  "runtime_seconds": 410.14247579199946,
+  "pilot_entity_count": 12,
+  "final_model_ready_rows": 12827,
+  "panel_t_min": 2,
+  "panel_t_max": 1688,
+  "observed_panel_rows": 9373,
+  "assumed_zero_rows": 3422,
+  "masked_global_gap_rows": 32,
+  "unknown_availability_rows": 3454,
+  "panel_quantity": 67616.0,
+  "scope": "36-series final experiment: 12 fixed entities for this dataset; historical observations unchanged",
+  "final_test_access": "Test panel materialized after configuration freeze. Test labels excluded from fitting, transforms and calibration; used only for scoring and later-origin observed context."
+}

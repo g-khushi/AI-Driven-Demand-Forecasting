@@ -1,0 +1,118 @@
+{
+  "status": "pass",
+  "created_utc": "2026-09-28T11:47:59.731951+00:00",
+  "checks": [
+    {
+      "dataset": "dunnhumby",
+      "check": "unchanged cohort, unique keys, zero/global-gap masks, final-test exclusion",
+      "status": "pass"
+    },
+    {
+      "dataset": "dunnhumby",
+      "fold": 1,
+      "check": "future target/business mutation invariance: lags, rolls, transforms, features",
+      "status": "pass"
+    },
+    {
+      "dataset": "dunnhumby",
+      "fold": 2,
+      "check": "future target/business mutation invariance: lags, rolls, transforms, features",
+      "status": "pass"
+    },
+    {
+      "dataset": "dunnhumby",
+      "fold": 3,
+      "check": "future target/business mutation invariance: lags, rolls, transforms, features",
+      "status": "pass"
+    },
+    {
+      "dataset": "dunnhumby",
+      "fold": 4,
+      "check": "future target/business mutation invariance: lags, rolls, transforms, features",
+      "status": "pass"
+    },
+    {
+      "dataset": "favorita",
+      "check": "unchanged cohort, unique keys, zero/global-gap masks, final-test exclusion",
+      "status": "pass"
+    },
+    {
+      "dataset": "favorita",
+      "fold": 1,
+      "check": "future target/business mutation invariance: lags, rolls, transforms, features",
+      "status": "pass"
+    },
+    {
+      "dataset": "favorita",
+      "fold": 2,
+      "check": "future target/business mutation invariance: lags, rolls, transforms, features",
+      "status": "pass"
+    },
+    {
+      "dataset": "favorita",
+      "fold": 3,
+      "check": "future target/business mutation invariance: lags, rolls, transforms, features",
+      "status": "pass"
+    },
+    {
+      "dataset": "favorita",
+      "fold": 4,
+      "check": "future target/business mutation invariance: lags, rolls, transforms, features",
+      "status": "pass"
+    },
+    {
+      "dataset": "uci",
+      "check": "unchanged cohort, unique keys, zero/global-gap masks, final-test exclusion",
+      "status": "pass"
+    },
+    {
+      "dataset": "uci",
+      "fold": 1,
+      "check": "future target/business mutation invariance: lags, rolls, transforms, features",
+      "status": "pass"
+    },
+    {
+      "dataset": "uci",
+      "fold": 2,
+      "check": "future target/business mutation invariance: lags, rolls, transforms, features",
+      "status": "pass"
+    },
+    {
+      "dataset": "uci",
+      "fold": 3,
+      "check": "future target/business mutation invariance: lags, rolls, transforms, features",
+      "status": "pass"
+    },
+    {
+      "dataset": "uci",
+      "fold": 4,
+      "check": "future target/business mutation invariance: lags, rolls, transforms, features",
+      "status": "pass"
+    },
+    {
+      "check": "pooled entity namespaces, finite inputs, chronological order and all training label timestamps",
+      "status": "pass"
+    },
+    {
+      "check": "Hybrid rejects future fit folds, non-out-of-sample labels and overlapping prediction folds",
+      "status": "pass"
+    }
+  ],
+  "checksums": {
+    "src/combined_v2/leakage_audit.py": "d6dc38e7142607005dfb6d8f9cff16da822d301205625a118f8077c0e78512b5",
+    "src/combined_v2/models.py": "7bfe347398efe6575ee32df8a43e18e1da81e9deb629a18848bda0ea9ac09b66",
+    "src/combined_v2/hybrid.py": "2cc8273fe29da4522700fee6d1ecb9f6cec149c4788794c22b933dbbeff25687",
+    "src/combined_v2/run_components.py": "c5de260e7741ec5174e6eeb6e3275b65fc9d5216158a400be1a7c9037f724918",
+    "src/combined_v2/prepare_panel.py": "b8e4b6998341123457ba7087a352e133dcb1277f544cab41b72e7ce9044bfe46",
+    "src/combined_v2/data.py": "aeca231d435a9c311c896369fdcb95cca852fef6aa5c5720ca5755d1aa92cbd9",
+    "src/feature_engineering/pilot_features.py": "398f9977547ab4ddb518dc0d179e0429772f75ae072a377f15ac6cf01bf43277",
+    "src/preprocessing/pilot_panels.py": "c51172cf7592d3d1b4bf14510387fd6908d24d3b27fccf96599d52ed155de877",
+    "experiments/combined_v2/protocol.json": "b2d35e8e6e58df7ad85a7cc7ee31f84d7b59b22a1b312ab99f3c025a364abddb",
+    "experiments/split_manifest.json": "53dace3b1f13386650735bd98180d22d7bdb664e99ebb48321bcfaa9f7094f5d",
+    "data/processed/combined_v2/uci_panel.csv.gz": "8a3831eeda60d79988fd0e48e57407bdf2d17db79caf9b892b1af4e2a9ec607e",
+    "data/processed/combined_v2/favorita_panel.csv.gz": "bc60b74bdf1948171761437832d4944f92237979b89e64e225af0b4af2a4b16a",
+    "data/processed/combined_v2/combined_panel.csv.gz": "858d62d0b5d55641a3ee2ab2b29002d94e0989be64b209d31f88e1d3099c9fb8",
+    "data/processed/combined_v2/dunnhumby_panel.csv.gz": "ff193a11a45ab75c65ce7f01d3239d8262c7df338f55ed319a621c2357147bbc"
+  },
+  "limits": "36-series retrospective pooled study; all four folds future-mutation tested, first-fold full training windows checked here and every fold checked at runtime; no claim that unavailable modalities exist"
+}

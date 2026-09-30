@@ -1,0 +1,46 @@
+{
+  "dataset": "dunnhumby",
+  "raw_original_rows_from_completed_audit": 2595732,
+  "development_input_rows": 2246408,
+  "quantity_before": 225887647.0,
+  "development_cutoff": 627,
+  "eligibility_cutoff": 543,
+  "joins": [
+    {
+      "table": "product_master",
+      "keys": [
+        "entity"
+      ],
+      "rows_before": 2116,
+      "rows_after": 2116,
+      "quantity_before": 4089.0,
+      "quantity_after": 4089.0,
+      "cardinality": "many_to_one"
+    }
+  ],
+  "negative_quantity_rows": 0,
+  "rows_removed": 12484,
+  "rows_retained": 2233924,
+  "quantity_after": 225887647.0,
+  "duplicate_excess_rows": 0,
+  "eligible_entity_count": 3778,
+  "excluded_entity_count": 75667,
+  "pilot_transaction_rows": 2726,
+  "pilot_quantity_before_aggregation": 4089.0,
+  "aggregation_quantity": 4089.0,
+  "aggregation_rows": 2116,
+  "missing_values": "Raw numeric inputs complete. Blank product categories normalized to unknown. Demographic join omitted; all households retained.",
+  "promotions": "Lagged realized-discount proxy only. Causal schedule/coupon/redemption features deferred due unavailable forecast-time schedule provenance; no unsafe many-to-many join.",
+  "runtime_seconds": 5.540597665996756,
+  "pilot_entity_count": 12,
+  "final_model_ready_rows": 7122,
+  "panel_t_min": 1,
+  "panel_t_max": 627,
+  "observed_panel_rows": 2116,
+  "assumed_zero_rows": 5006,
+  "masked_global_gap_rows": 0,
+  "unknown_availability_rows": 5006,
+  "panel_quantity": 4089.0,
+  "scope": "12-entity deterministic development pilot; not full-population preprocessing",
+  "final_test_access": "No final-test rows included in transformations, features or model panels"
+}

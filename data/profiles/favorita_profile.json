@@ -1,0 +1,247 @@
+{
+  "dataset": "Corporacion Favorita Grocery Sales Forecasting",
+  "status": "measured_full_train_stream",
+  "rows": 125497040,
+  "columns": 6,
+  "schema": [
+    "id",
+    "date",
+    "store_nbr",
+    "item_nbr",
+    "unit_sales",
+    "onpromotion"
+  ],
+  "date_min": "2013-01-01",
+  "date_max": "2017-08-15",
+  "calendar_days": 1688,
+  "days_with_records": 1684,
+  "missing_calendar_days": [
+    "2013-12-25",
+    "2014-12-25",
+    "2015-12-25",
+    "2016-12-25"
+  ],
+  "stores": 54,
+  "products": 4036,
+  "item_master_rows": 4100,
+  "families": 33,
+  "classes": 337,
+  "customers": null,
+  "missing": {
+    "id": 0,
+    "date": 0,
+    "store_nbr": 0,
+    "item_nbr": 0,
+    "unit_sales": 0,
+    "onpromotion": 21657651
+  },
+  "counts": {
+    "negative_unit_sales_rows": 7795,
+    "zero_unit_sales_rows": 0,
+    "fractional_unit_sales_rows": 8191095,
+    "promotion_true_rows": 7810622,
+    "promotion_false_rows": 96028767
+  },
+  "unit_sales_min": -15372.0,
+  "unit_sales_max": 89440.0,
+  "store_item_date_duplicate_excess_rows": 0,
+  "id_is_consecutive_in_file": true,
+  "exact_duplicate_excess_rows": 0,
+  "exact_duplicate_method": "Consecutive unique id proves zero identical full rows, including id.",
+  "item_orphan_rows": 0,
+  "store_orphan_rows": 0,
+  "store_item_pairs": 174685,
+  "observed_store_item_days": 125497040,
+  "full_master_grid_days": 373723200,
+  "absent_master_grid_days": 248226160,
+  "absent_days_within_first_last_observation": 63592025,
+  "zero_demand_caveat": "Explicit zeros counted. Missing records include inactive assortment and unobserved days; not automatically zeros.",
+  "inventory": "not provided",
+  "price": "not provided",
+  "returns": "negative unit_sales proxy, not separately itemized returns",
+  "oil_missing_rows": 43,
+  "holiday_transferred_rows": 12,
+  "holiday_duplicate_dates": 38,
+  "tables": {
+    "holidays_events": {
+      "rows": 350,
+      "columns": 6,
+      "schema": {
+        "date": "object",
+        "type": "object",
+        "locale": "object",
+        "locale_name": "object",
+        "description": "object",
+        "transferred": "bool"
+      },
+      "missing": {
+        "date": 0,
+        "type": 0,
+        "locale": 0,
+        "locale_name": 0,
+        "description": 0,
+        "transferred": 0
+      },
+      "distinct_nonmissing": {
+        "date": 312,
+        "type": 6,
+        "locale": 3,
+        "locale_name": 24,
+        "description": 103,
+        "transferred": 2
+      },
+      "exact_duplicate_excess_rows": 0,
+      "file": {
+        "path": "data/raw/favorita/holidays_events.csv",
+        "bytes": 22309,
+        "sha256": "81a183d6c4d691b57f84a0fde6bbf734a5b3c36a74b97378bf33a592648e2999"
+      }
+    },
+    "items": {
+      "rows": 4100,
+      "columns": 4,
+      "schema": {
+        "item_nbr": "int64",
+        "family": "object",
+        "class": "int64",
+        "perishable": "int64"
+      },
+      "missing": {
+        "item_nbr": 0,
+        "family": 0,
+        "class": 0,
+        "perishable": 0
+      },
+      "distinct_nonmissing": {
+        "item_nbr": 4100,
+        "family": 33,
+        "class": 337,
+        "perishable": 2
+      },
+      "exact_duplicate_excess_rows": 0,
+      "file": {
+        "path": "data/raw/favorita/items.csv",
+        "bytes": 101841,
+        "sha256": "1efd8295f52c8531ec5bf6c3de37228a56bad2f2c653e79c4869baaf637edcc6"
+      }
+    },
+    "oil": {
+      "rows": 1218,
+      "columns": 2,
+      "schema": {
+        "date": "object",
+        "dcoilwtico": "float64"
+      },
+      "missing": {
+        "date": 0,
+        "dcoilwtico": 43
+      },
+      "distinct_nonmissing": {
+        "date": 1218,
+        "dcoilwtico": 998
+      },
+      "exact_duplicate_excess_rows": 0,
+      "file": {
+        "path": "data/raw/favorita/oil.csv",
+        "bytes": 20580,
+        "sha256": "944b23b857580f9d804399346fd3ed69bffcb7facfd98c55fdb408b8d057cca7"
+      }
+    },
+    "stores": {
+      "rows": 54,
+      "columns": 5,
+      "schema": {
+        "store_nbr": "int64",
+        "city": "object",
+        "state": "object",
+        "type": "object",
+        "cluster": "int64"
+      },
+      "missing": {
+        "store_nbr": 0,
+        "city": 0,
+        "state": 0,
+        "type": 0,
+        "cluster": 0
+      },
+      "distinct_nonmissing": {
+        "store_nbr": 54,
+        "city": 22,
+        "state": 16,
+        "type": 5,
+        "cluster": 17
+      },
+      "exact_duplicate_excess_rows": 0,
+      "file": {
+        "path": "data/raw/favorita/stores.csv",
+        "bytes": 1387,
+        "sha256": "af503b2bce11d7906d249f81cc0598f10e2addcc9f6c59aa2d95c9f2652c296b"
+      }
+    },
+    "transactions": {
+      "rows": 83488,
+      "columns": 3,
+      "schema": {
+        "date": "object",
+        "store_nbr": "int64",
+        "transactions": "int64"
+      },
+      "missing": {
+        "date": 0,
+        "store_nbr": 0,
+        "transactions": 0
+      },
+      "distinct_nonmissing": {
+        "date": 1682,
+        "store_nbr": 54,
+        "transactions": 4993
+      },
+      "exact_duplicate_excess_rows": 0,
+      "file": {
+        "path": "data/raw/favorita/transactions.csv",
+        "bytes": 1552637,
+        "sha256": "e116384a6981af74932832436aa2f6a43121f77ca81accc44e3a5160158ca03c"
+      }
+    },
+    "test": {
+      "rows": 3370464,
+      "columns": 5,
+      "schema": {
+        "id": "int64",
+        "date": "object",
+        "store_nbr": "int64",
+        "item_nbr": "int64",
+        "onpromotion": "bool"
+      },
+      "missing": {
+        "id": 0,
+        "date": 0,
+        "store_nbr": 0,
+        "item_nbr": 0,
+        "onpromotion": 0
+      },
+      "distinct_nonmissing": {
+        "id": 3370464,
+        "date": 16,
+        "store_nbr": 54,
+        "item_nbr": 3901,
+        "onpromotion": 2
+      },
+      "exact_duplicate_excess_rows": 0,
+      "date_min": "2017-08-16",
+      "date_max": "2017-08-31",
+      "store_item_date_duplicate_excess": 0,
+      "target_available": false
+    }
+  },
+  "archive": {
+    "path": "data/raw/favorita/favorita-grocery-sales-forecasting.zip",
+    "bytes": 480014675,
+    "sha256": "dfd22643758ca70d61874f79f9a4065a2d3e964fd012c6481796f5fa086d46af"
+  },
+  "train_compressed": {
+    "path": "data/raw/favorita/train.csv.7z",
+    "bytes": 474092593,
+    "sha256": "7d14532d53b12f5e5e69f2dec72ff081bfa6081dc59ad4ca4fa030c7a7a3cce1"
+  }
+}

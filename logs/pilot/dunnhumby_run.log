@@ -1,0 +1,11 @@
+dunnhumby calibration_fit Naive
+dunnhumby calibration_fit SARIMA
+dunnhumby calibration_fit XGBoost
+dunnhumby calibration_fit LSTM
+dunnhumby calibration_fit Transformer
+dunnhumby pilot_validation Naive
+dunnhumby pilot_validation SARIMA
+dunnhumby pilot_validation XGBoost
+dunnhumby pilot_validation LSTM
+dunnhumby pilot_validation Transformer
+dunnhumby finished pilot

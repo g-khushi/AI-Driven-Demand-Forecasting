@@ -1,0 +1,11 @@
+favorita calibration_fit Naive
+favorita calibration_fit SARIMA
+favorita calibration_fit XGBoost
+favorita calibration_fit LSTM
+favorita calibration_fit Transformer
+favorita pilot_validation Naive
+favorita pilot_validation SARIMA
+favorita pilot_validation XGBoost
+favorita pilot_validation LSTM
+favorita pilot_validation Transformer
+favorita finished pilot

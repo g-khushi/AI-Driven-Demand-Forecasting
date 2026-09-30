@@ -1,0 +1,116 @@
+[
+  {
+    "dataset": "dunnhumby",
+    "path": "data/raw/dunnhumby/dunnhumby-complete-journey-data.zip",
+    "bytes": 135859064,
+    "sha256": "324288a8811c4ed86e85415fdee36f3692582e2cc9dd87866c0e333df237f782"
+  },
+  {
+    "dataset": "favorita",
+    "path": "data/raw/favorita/favorita-grocery-sales-forecasting.zip",
+    "bytes": 480014675,
+    "sha256": "dfd22643758ca70d61874f79f9a4065a2d3e964fd012c6481796f5fa086d46af"
+  },
+  {
+    "dataset": "favorita",
+    "path": "data/raw/favorita/holidays_events.csv",
+    "bytes": 22309,
+    "sha256": "81a183d6c4d691b57f84a0fde6bbf734a5b3c36a74b97378bf33a592648e2999"
+  },
+  {
+    "dataset": "favorita",
+    "path": "data/raw/favorita/holidays_events.csv.7z",
+    "bytes": 1898,
+    "sha256": "1d514622ed75f2fa28e8cc5cba40953fb6c5df9e55eac88bdef1cccfa226ce5c"
+  },
+  {
+    "dataset": "favorita",
+    "path": "data/raw/favorita/items.csv",
+    "bytes": 101841,
+    "sha256": "1efd8295f52c8531ec5bf6c3de37228a56bad2f2c653e79c4869baaf637edcc6"
+  },
+  {
+    "dataset": "favorita",
+    "path": "data/raw/favorita/items.csv.7z",
+    "bytes": 14315,
+    "sha256": "80d5bc389b4a89251697a0c92a160feecb8e1d38bc1ffb81de3aa1faf58f30e3"
+  },
+  {
+    "dataset": "favorita",
+    "path": "data/raw/favorita/oil.csv",
+    "bytes": 20580,
+    "sha256": "944b23b857580f9d804399346fd3ed69bffcb7facfd98c55fdb408b8d057cca7"
+  },
+  {
+    "dataset": "favorita",
+    "path": "data/raw/favorita/oil.csv.7z",
+    "bytes": 3762,
+    "sha256": "1c71799ea0a32a9b32743135f59d335ad0eb24947fd186cd215341ab31b85bb9"
+  },
+  {
+    "dataset": "favorita",
+    "path": "data/raw/favorita/sample_submission.csv",
+    "bytes": 40445582,
+    "sha256": "50b93078008e68bdd0818b18ca2493c23e7ad7e2c506b2b263c3347dad1d77db"
+  },
+  {
+    "dataset": "favorita",
+    "path": "data/raw/favorita/sample_submission.csv.7z",
+    "bytes": 666528,
+    "sha256": "c5ef726c61509dcea74f9dc463e4eeb33feefd32fc546069cb787142b34daee0"
+  },
+  {
+    "dataset": "favorita",
+    "path": "data/raw/favorita/stores.csv",
+    "bytes": 1387,
+    "sha256": "af503b2bce11d7906d249f81cc0598f10e2addcc9f6c59aa2d95c9f2652c296b"
+  },
+  {
+    "dataset": "favorita",
+    "path": "data/raw/favorita/stores.csv.7z",
+    "bytes": 648,
+    "sha256": "eb82e34b2e51fff66e3fdd04885db1125fe1d5de8ebb102546f29741c3b9fee4"
+  },
+  {
+    "dataset": "favorita",
+    "path": "data/raw/favorita/test.csv",
+    "bytes": 126163026,
+    "sha256": "b9d3bef11ca9b058bdd4c1fa3a69b8a595f4ef39983051eb5ab416e255f13ae6"
+  },
+  {
+    "dataset": "favorita",
+    "path": "data/raw/favorita/test.csv.7z",
+    "bytes": 4885065,
+    "sha256": "ef20570313bcf3bcef8ff66203409fa42082db04eb94e67d386c89296c5b5f90"
+  },
+  {
+    "dataset": "favorita",
+    "path": "data/raw/favorita/train.csv.7z",
+    "bytes": 474092593,
+    "sha256": "7d14532d53b12f5e5e69f2dec72ff081bfa6081dc59ad4ca4fa030c7a7a3cce1"
+  },
+  {
+    "dataset": "favorita",
+    "path": "data/raw/favorita/transactions.csv",
+    "bytes": 1552637,
+    "sha256": "e116384a6981af74932832436aa2f6a43121f77ca81accc44e3a5160158ca03c"
+  },
+  {
+    "dataset": "favorita",
+    "path": "data/raw/favorita/transactions.csv.7z",
+    "bytes": 219499,
+    "sha256": "ec2e21c10b7d3f9b4c856858a245e9dbfbb8ca68d6d28f669857102892d270d4"
+  },
+  {
+    "dataset": "uci",
+    "path": "data/raw/uci/Online Retail.xlsx",
+    "bytes": 23715344,
+    "sha256": "43465a06f2ccf7c8b5bd2892bc7defb52f97487934fe93b16ae4c3936424676d"
+  },
+  {
+    "dataset": "uci",
+    "path": "data/raw/uci/online_retail.zip",
+    "bytes": 23715478,
+    "sha256": "f5385cbb54bbebf7196389109c6b0621faab0c304e3702548165e71c84aede8b"
+  }
+]

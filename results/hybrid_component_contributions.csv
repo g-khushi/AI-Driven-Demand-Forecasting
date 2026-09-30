@@ -1,0 +1,16 @@
+dataset,model,weight,mean_weighted_forecast,share_total_hybrid_forecast,note
+dunnhumby,Naive,0.16336369500900647,0.12252277125675486,0.26646954469659534,algebraic contribution; not independent causal benefit
+dunnhumby,SARIMA,0.19608137130516273,0.11124665316738411,0.2419455968426652,algebraic contribution; not independent causal benefit
+dunnhumby,XGBoost,0.19745738932634854,0.11444757390255604,0.24890714270195485,algebraic contribution; not independent causal benefit
+dunnhumby,LSTM,0.22928007236062176,0.02768708842304907,0.06021546664663377,algebraic contribution; not independent causal benefit
+dunnhumby,Transformer,0.21381747199886056,0.08389619322694299,0.18246224911215086,algebraic contribution; not independent causal benefit
+favorita,Naive,0.20385198164802157,0.7187905811234927,0.16539713427614167,algebraic contribution; not independent causal benefit
+favorita,SARIMA,0.2091753794740983,0.9439220334721815,0.2172009531237644,algebraic contribution; not independent causal benefit
+favorita,XGBoost,0.19869888043330264,0.8413617549366844,0.19360134482920366,algebraic contribution; not independent causal benefit
+favorita,LSTM,0.19111831927807346,0.8858474768495337,0.20383772120059426,algebraic contribution; not independent causal benefit
+favorita,Transformer,0.1971554391665039,0.9559247988412544,0.2199628465702959,algebraic contribution; not independent causal benefit
+uci,Naive,0.13126139678834334,1.6261828602111423,0.2351575510194596,algebraic contribution; not independent causal benefit
+uci,SARIMA,0.1793862815022793,1.9171157155980427,0.27722850100782626,algebraic contribution; not independent causal benefit
+uci,XGBoost,0.19883963135182728,1.7076637084764559,0.24694025836552735,algebraic contribution; not independent causal benefit
+uci,LSTM,0.2527127894125924,0.5198560098037366,0.07517485833808522,algebraic contribution; not independent causal benefit
+uci,Transformer,0.23779990094495762,1.1444725530949151,0.16549883126910145,algebraic contribution; not independent causal benefit

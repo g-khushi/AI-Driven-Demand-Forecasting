@@ -1,0 +1,240 @@
+{
+  "created_utc": "2026-09-22T04:44:30.218573+00:00",
+  "status": "pass",
+  "scope": "Pilot: 12 training-stratified entities per dataset, fixed first two calibration folds; no final test",
+  "tests": [
+    {
+      "dataset": "dunnhumby",
+      "test": "lag_leakage",
+      "status": "pass"
+    },
+    {
+      "dataset": "dunnhumby",
+      "test": "rolling_window_leakage",
+      "status": "pass"
+    },
+    {
+      "dataset": "dunnhumby",
+      "test": "future_promotion_leakage",
+      "status": "pass"
+    },
+    {
+      "dataset": "dunnhumby",
+      "test": "future_oil_price_leakage",
+      "status": "pass"
+    },
+    {
+      "dataset": "dunnhumby",
+      "test": "future_transaction_count_leakage",
+      "status": "pass"
+    },
+    {
+      "dataset": "dunnhumby",
+      "test": "future_customer_count_leakage",
+      "status": "pass"
+    },
+    {
+      "dataset": "dunnhumby",
+      "test": "future_holiday_leakage",
+      "status": "pass"
+    },
+    {
+      "dataset": "dunnhumby",
+      "test": "future_price_leakage",
+      "status": "pass"
+    },
+    {
+      "dataset": "dunnhumby",
+      "test": "scaler_leakage",
+      "status": "pass"
+    },
+    {
+      "dataset": "dunnhumby",
+      "test": "imputation_leakage",
+      "status": "pass"
+    },
+    {
+      "dataset": "dunnhumby",
+      "test": "target_leakage_through_encodings",
+      "status": "pass"
+    },
+    {
+      "dataset": "dunnhumby",
+      "test": "entity_selection_leakage",
+      "status": "pass"
+    },
+    {
+      "dataset": "dunnhumby",
+      "test": "input_timestamp_and_training_label_cutoff",
+      "status": "pass"
+    },
+    {
+      "dataset": "dunnhumby",
+      "test": "test_exclusion_and_observation_masks",
+      "status": "pass"
+    },
+    {
+      "dataset": "favorita",
+      "test": "lag_leakage",
+      "status": "pass"
+    },
+    {
+      "dataset": "favorita",
+      "test": "rolling_window_leakage",
+      "status": "pass"
+    },
+    {
+      "dataset": "favorita",
+      "test": "future_promotion_leakage",
+      "status": "pass"
+    },
+    {
+      "dataset": "favorita",
+      "test": "future_oil_price_leakage",
+      "status": "pass"
+    },
+    {
+      "dataset": "favorita",
+      "test": "future_transaction_count_leakage",
+      "status": "pass"
+    },
+    {
+      "dataset": "favorita",
+      "test": "future_customer_count_leakage",
+      "status": "pass"
+    },
+    {
+      "dataset": "favorita",
+      "test": "future_holiday_leakage",
+      "status": "pass"
+    },
+    {
+      "dataset": "favorita",
+      "test": "future_price_leakage",
+      "status": "pass"
+    },
+    {
+      "dataset": "favorita",
+      "test": "scaler_leakage",
+      "status": "pass"
+    },
+    {
+      "dataset": "favorita",
+      "test": "imputation_leakage",
+      "status": "pass"
+    },
+    {
+      "dataset": "favorita",
+      "test": "target_leakage_through_encodings",
+      "status": "pass"
+    },
+    {
+      "dataset": "favorita",
+      "test": "entity_selection_leakage",
+      "status": "pass"
+    },
+    {
+      "dataset": "favorita",
+      "test": "input_timestamp_and_training_label_cutoff",
+      "status": "pass"
+    },
+    {
+      "dataset": "favorita",
+      "test": "test_exclusion_and_observation_masks",
+      "status": "pass"
+    },
+    {
+      "dataset": "uci",
+      "test": "lag_leakage",
+      "status": "pass"
+    },
+    {
+      "dataset": "uci",
+      "test": "rolling_window_leakage",
+      "status": "pass"
+    },
+    {
+      "dataset": "uci",
+      "test": "future_promotion_leakage",
+      "status": "pass"
+    },
+    {
+      "dataset": "uci",
+      "test": "future_oil_price_leakage",
+      "status": "pass"
+    },
+    {
+      "dataset": "uci",
+      "test": "future_transaction_count_leakage",
+      "status": "pass"
+    },
+    {
+      "dataset": "uci",
+      "test": "future_customer_count_leakage",
+      "status": "pass"
+    },
+    {
+      "dataset": "uci",
+      "test": "future_holiday_leakage",
+      "status": "pass"
+    },
+    {
+      "dataset": "uci",
+      "test": "future_price_leakage",
+      "status": "pass"
+    },
+    {
+      "dataset": "uci",
+      "test": "scaler_leakage",
+      "status": "pass"
+    },
+    {
+      "dataset": "uci",
+      "test": "imputation_leakage",
+      "status": "pass"
+    },
+    {
+      "dataset": "uci",
+      "test": "target_leakage_through_encodings",
+      "status": "pass"
+    },
+    {
+      "dataset": "uci",
+      "test": "entity_selection_leakage",
+      "status": "pass"
+    },
+    {
+      "dataset": "uci",
+      "test": "input_timestamp_and_training_label_cutoff",
+      "status": "pass"
+    },
+    {
+      "dataset": "uci",
+      "test": "test_exclusion_and_observation_masks",
+      "status": "pass"
+    },
+    {
+      "dataset": "all",
+      "test": "hybrid_weight_leakage",
+      "status": "pass"
+    }
+  ],
+  "checksums": {
+    "data/processed/pilot/uci_panel.csv.gz": "ccfbbf9be53e22c1ab2b9993a5193f975204a1a85bc942b4fd46a88e033cc3dc",
+    "data/processed/pilot/favorita_panel.csv.gz": "0f42befdfad4a59513569b90edfaf9f8379fd7d1c084c8bf835813de2a8c0608",
+    "data/processed/pilot/dunnhumby_panel.csv.gz": "7642277f4b2b10740dae94e0e79e3e72e01e449b3f641ca8bf8b40183d94a58d",
+    "src/feature_engineering/leakage_audit.py": "5217a6bd183023b0144afaf993ec01b5807a50cea8110277fbd431a69d2df202",
+    "src/feature_engineering/pilot_features.py": "398f9977547ab4ddb518dc0d179e0429772f75ae072a377f15ac6cf01bf43277",
+    "src/preprocessing/pilot_panels.py": "c51172cf7592d3d1b4bf14510387fd6908d24d3b27fccf96599d52ed155de877",
+    "src/hybrid/hybrid_model.py": "27be58719fcce71d06cba0f0f02f1bfcae198f7356a9f4ca08abb4aa10b2bd5f",
+    "src/evaluation/metrics.py": "8d00482996cf078042b4657c3134ce8f44370cd47eab340a842c8d29a96dd211",
+    "src/evaluation/run_pilot.py": "876b2c6471da8a8fd1c60ec08e48e029519d88e42b1407868edfb87a6f0b586d",
+    "experiments/continuation_protocol.json": "894609fe4f32b50a214dfcdfe0bba0af7ae6acdaf86699a0a39f4969e4cc07eb",
+    "experiments/split_manifest.json": "53dace3b1f13386650735bd98180d22d7bdb664e99ebb48321bcfaa9f7094f5d"
+  },
+  "limits": [
+    "No proof of original metadata publication times; business features conservatively lagged.",
+    "Training-fold scalers fit only through training cutoff. Raw sample features are bounded by sample origin.",
+    "Tests establish contracts on selected pilot panels, not an assertion that future code changes are safe."
+  ]
+}

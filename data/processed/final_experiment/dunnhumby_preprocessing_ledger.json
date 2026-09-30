@@ -1,0 +1,46 @@
+{
+  "dataset": "dunnhumby",
+  "raw_original_rows_from_completed_audit": 2595732,
+  "development_input_rows": 2595732,
+  "quantity_before": 260685622.0,
+  "development_cutoff": 711,
+  "eligibility_cutoff": 543,
+  "joins": [
+    {
+      "table": "product_master",
+      "keys": [
+        "entity"
+      ],
+      "rows_before": 2437,
+      "rows_after": 2437,
+      "quantity_before": 4738.0,
+      "quantity_after": 4738.0,
+      "cardinality": "many_to_one"
+    }
+  ],
+  "negative_quantity_rows": 0,
+  "rows_removed": 14466,
+  "rows_retained": 2581266,
+  "quantity_after": 260685622.0,
+  "duplicate_excess_rows": 0,
+  "eligible_entity_count": 3778,
+  "excluded_entity_count": 75667,
+  "pilot_transaction_rows": 3167,
+  "pilot_quantity_before_aggregation": 4738.0,
+  "aggregation_quantity": 4738.0,
+  "aggregation_rows": 2437,
+  "missing_values": "Raw numeric inputs complete. Blank product categories normalized to unknown. Demographic join omitted; all households retained.",
+  "promotions": "Lagged realized-discount proxy only. Causal schedule/coupon/redemption features deferred due unavailable forecast-time schedule provenance; no unsafe many-to-many join.",
+  "runtime_seconds": 6.6975076669987175,
+  "pilot_entity_count": 12,
+  "final_model_ready_rows": 8130,
+  "panel_t_min": 1,
+  "panel_t_max": 711,
+  "observed_panel_rows": 2437,
+  "assumed_zero_rows": 5693,
+  "masked_global_gap_rows": 0,
+  "unknown_availability_rows": 5693,
+  "panel_quantity": 4738.0,
+  "scope": "36-series final experiment: 12 fixed entities for this dataset; historical observations unchanged",
+  "final_test_access": "Test panel materialized after configuration freeze. Test labels excluded from fitting, transforms and calibration; used only for scoring and later-origin observed context."
+}

@@ -1,0 +1,73 @@
+{
+  "dataset": "uci",
+  "raw_original_rows_from_completed_audit": 541909,
+  "development_input_rows": 540277,
+  "quantity_before": 5163501,
+  "development_cutoff": 373,
+  "eligibility_cutoff": 205,
+  "stages": [
+    {
+      "rule": "identical_line_excess",
+      "rows_before": 540277,
+      "rows_removed": 5261,
+      "rows_retained": 535016,
+      "quantity_before": 5163501.0,
+      "quantity_after": 5149583.0
+    },
+    {
+      "rule": "cancelled_invoice",
+      "rows_before": 535016,
+      "rows_removed": 9244,
+      "rows_retained": 525772,
+      "quantity_before": 5149583.0,
+      "quantity_after": 5344113.0
+    },
+    {
+      "rule": "remaining_nonpositive_quantity",
+      "rows_before": 525772,
+      "rows_removed": 1336,
+      "rows_retained": 524436,
+      "quantity_before": 5344113.0,
+      "quantity_after": 5551070.0
+    },
+    {
+      "rule": "nonpositive_price",
+      "rows_before": 524436,
+      "rows_removed": 1176,
+      "rows_retained": 523260,
+      "quantity_before": 5551070.0,
+      "quantity_after": 5478471.0
+    },
+    {
+      "rule": "explicit_nonmerchandise_code",
+      "rows_before": 523260,
+      "rows_removed": 2330,
+      "rows_retained": 520930,
+      "quantity_before": 5478471.0,
+      "quantity_after": 5467450.0
+    }
+  ],
+  "eligible_entity_count": 656,
+  "excluded_entity_count": 2838,
+  "clean_development_rows": 520930,
+  "quantity_after": 5467450.0,
+  "negative_quantity_rows": 10617,
+  "missing_customer_rows_retained": 130382,
+  "missing_description_rows_retained": 0,
+  "pilot_transaction_rows": 4073,
+  "pilot_quantity_before_aggregation": 42304.0,
+  "aggregation_rows": 2166,
+  "aggregation_quantity": 42304.0,
+  "runtime_seconds": 29.045123791998776,
+  "pilot_entity_count": 12,
+  "final_model_ready_rows": 4473,
+  "panel_t_min": 1,
+  "panel_t_max": 373,
+  "observed_panel_rows": 2166,
+  "assumed_zero_rows": 1479,
+  "masked_global_gap_rows": 828,
+  "unknown_availability_rows": 2307,
+  "panel_quantity": 42304.0,
+  "scope": "36-series final experiment: 12 fixed entities for this dataset; historical observations unchanged",
+  "final_test_access": "Test panel materialized after configuration freeze. Test labels excluded from fitting, transforms and calibration; used only for scoring and later-origin observed context."
+}

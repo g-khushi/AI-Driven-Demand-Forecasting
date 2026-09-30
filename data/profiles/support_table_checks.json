@@ -1,0 +1,33 @@
+{
+  "items": {
+    "join_key": [
+      "item_nbr"
+    ],
+    "join_key_duplicate_excess_rows": 0
+  },
+  "stores": {
+    "join_key": [
+      "store_nbr"
+    ],
+    "join_key_duplicate_excess_rows": 0
+  },
+  "oil": {
+    "join_key": [
+      "date"
+    ],
+    "join_key_duplicate_excess_rows": 0,
+    "date_min": "2013-01-01",
+    "date_max": "2017-08-31"
+  },
+  "transactions": {
+    "join_key": [
+      "date",
+      "store_nbr"
+    ],
+    "join_key_duplicate_excess_rows": 0,
+    "date_min": "2013-01-01",
+    "date_max": "2017-08-15",
+    "zero_transaction_rows": 0,
+    "negative_transaction_rows": 0
+  }
+}

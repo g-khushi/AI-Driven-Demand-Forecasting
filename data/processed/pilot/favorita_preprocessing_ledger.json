@@ -1,0 +1,93 @@
+{
+  "dataset": "favorita",
+  "raw_original_rows_from_completed_audit": 125497040,
+  "development_input_rows": 115351331,
+  "quantity_before": 991380251.1248,
+  "quantity_after": 991516653.4932998,
+  "negative_quantity_rows": 7076,
+  "missing_onpromotion_rows": 21657651,
+  "rows_removed": 0,
+  "rows_retained": 115351331,
+  "negative_rule": "unit_sales retained separately; demand=max(unit_sales,0)",
+  "fractional_sales": "preserved float64, never rounded",
+  "eligibility_cutoff": 1496,
+  "development_cutoff": 1592,
+  "eligible_entity_count": 147289,
+  "excluded_entity_count": 16535,
+  "duplicate_policy": "Completed full audit proved unique date/store/item keys; pilot keys asserted again.",
+  "returns_quantity": -136402.36849999998,
+  "joins": [
+    {
+      "table": "items",
+      "keys": [
+        "item_nbr"
+      ],
+      "rows_before": 8733,
+      "rows_after": 8733,
+      "quantity_before": 63818.0,
+      "quantity_after": 63818.0,
+      "cardinality": "many_to_one"
+    },
+    {
+      "table": "stores",
+      "keys": [
+        "store_nbr"
+      ],
+      "rows_before": 8733,
+      "rows_after": 8733,
+      "quantity_before": 63818.0,
+      "quantity_after": 63818.0,
+      "cardinality": "many_to_one"
+    },
+    {
+      "table": "transactions",
+      "keys": [
+        "t",
+        "store_nbr"
+      ],
+      "rows_before": 8733,
+      "rows_after": 8733,
+      "quantity_before": 63818.0,
+      "quantity_after": 63818.0,
+      "cardinality": "many_to_one"
+    },
+    {
+      "table": "oil_past_forward_fill",
+      "keys": [
+        "t"
+      ],
+      "rows_before": 8733,
+      "rows_after": 8733,
+      "quantity_before": 63818.0,
+      "quantity_after": 63818.0,
+      "cardinality": "many_to_one"
+    },
+    {
+      "table": "holidays_aggregated_by_applicable_locality",
+      "keys": [
+        "t",
+        "store_nbr"
+      ],
+      "rows_before": 8733,
+      "rows_after": 8733,
+      "quantity_before": 63818.0,
+      "quantity_after": 63818.0,
+      "cardinality": "many_to_one"
+    }
+  ],
+  "pilot_sales_rows": 8733,
+  "pilot_quantity_before_joins": 63818.0,
+  "pilot_quantity_after_joins": 63818.0,
+  "runtime_seconds": 368.311140292004,
+  "pilot_entity_count": 12,
+  "final_model_ready_rows": 11675,
+  "panel_t_min": 2,
+  "panel_t_max": 1592,
+  "observed_panel_rows": 8733,
+  "assumed_zero_rows": 2910,
+  "masked_global_gap_rows": 32,
+  "unknown_availability_rows": 2942,
+  "panel_quantity": 63818.0,
+  "scope": "12-entity deterministic development pilot; not full-population preprocessing",
+  "final_test_access": "No final-test rows included in transformations, features or model panels"
+}

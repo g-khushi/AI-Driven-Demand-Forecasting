@@ -1,0 +1,231 @@
+dunnhumby calibration_fit Naive
+Exception in thread Thread-1 (watch):
+Traceback (most recent call last):
+  File "/Users/rajatgarg/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/threading.py", line 1075, in _bootstrap_inner
+    self.run()
+  File "/Users/rajatgarg/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/threading.py", line 1012, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/rajatgarg/Documents/AI driven demand forecasting using machine learning and time series models/project/src/evaluation/run_pilot.py", line 38, in watch
+    for c in p.children(recursive=True):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajatgarg/Documents/AI driven demand forecasting using machine learning and time series models/project/.audit_deps/psutil/__init__.py", line 978, in children
+    ppid_map = _ppid_map()
+               ^^^^^^^^^^^
+  File "/Users/rajatgarg/Documents/AI driven demand forecasting using machine learning and time series models/project/.audit_deps/psutil/__init__.py", line 256, in _ppid_map
+    for pid in pids():
+               ^^^^^^
+  File "/Users/rajatgarg/Documents/AI driven demand forecasting using machine learning and time series models/project/.audit_deps/psutil/__init__.py", line 1485, in pids
+    ret = sorted(_psplatform.pids())
+                 ^^^^^^^^^^^^^^^^^^
+  File "/Users/rajatgarg/Documents/AI driven demand forecasting using machine learning and time series models/project/.audit_deps/psutil/_psosx.py", line 320, in pids
+    ls = cext.pids()
+         ^^^^^^^^^^^
+PermissionError: [Errno 1] Operation not permitted (originated from sysctl() malloc 1/3)
+dunnhumby calibration_fit SARIMA
+Exception in thread Thread-2 (watch):
+Traceback (most recent call last):
+  File "/Users/rajatgarg/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/threading.py", line 1075, in _bootstrap_inner
+    self.run()
+  File "/Users/rajatgarg/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/threading.py", line 1012, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/rajatgarg/Documents/AI driven demand forecasting using machine learning and time series models/project/src/evaluation/run_pilot.py", line 38, in watch
+    for c in p.children(recursive=True):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajatgarg/Documents/AI driven demand forecasting using machine learning and time series models/project/.audit_deps/psutil/__init__.py", line 978, in children
+    ppid_map = _ppid_map()
+               ^^^^^^^^^^^
+  File "/Users/rajatgarg/Documents/AI driven demand forecasting using machine learning and time series models/project/.audit_deps/psutil/__init__.py", line 256, in _ppid_map
+    for pid in pids():
+               ^^^^^^
+  File "/Users/rajatgarg/Documents/AI driven demand forecasting using machine learning and time series models/project/.audit_deps/psutil/__init__.py", line 1485, in pids
+    ret = sorted(_psplatform.pids())
+                 ^^^^^^^^^^^^^^^^^^
+  File "/Users/rajatgarg/Documents/AI driven demand forecasting using machine learning and time series models/project/.audit_deps/psutil/_psosx.py", line 320, in pids
+    ls = cext.pids()
+         ^^^^^^^^^^^
+PermissionError: [Errno 1] Operation not permitted (originated from sysctl() malloc 1/3)
+dunnhumby calibration_fit XGBoost
+Exception in thread Thread-3 (watch):
+Traceback (most recent call last):
+  File "/Users/rajatgarg/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/threading.py", line 1075, in _bootstrap_inner
+    self.run()
+  File "/Users/rajatgarg/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/threading.py", line 1012, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/rajatgarg/Documents/AI driven demand forecasting using machine learning and time series models/project/src/evaluation/run_pilot.py", line 38, in watch
+    for c in p.children(recursive=True):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajatgarg/Documents/AI driven demand forecasting using machine learning and time series models/project/.audit_deps/psutil/__init__.py", line 978, in children
+    ppid_map = _ppid_map()
+               ^^^^^^^^^^^
+  File "/Users/rajatgarg/Documents/AI driven demand forecasting using machine learning and time series models/project/.audit_deps/psutil/__init__.py", line 256, in _ppid_map
+    for pid in pids():
+               ^^^^^^
+  File "/Users/rajatgarg/Documents/AI driven demand forecasting using machine learning and time series models/project/.audit_deps/psutil/__init__.py", line 1485, in pids
+    ret = sorted(_psplatform.pids())
+                 ^^^^^^^^^^^^^^^^^^
+  File "/Users/rajatgarg/Documents/AI driven demand forecasting using machine learning and time series models/project/.audit_deps/psutil/_psosx.py", line 320, in pids
+    ls = cext.pids()
+         ^^^^^^^^^^^
+PermissionError: [Errno 1] Operation not permitted (originated from sysctl() malloc 1/3)
+dunnhumby calibration_fit LSTM
+Exception in thread Thread-4 (watch):
+Traceback (most recent call last):
+  File "/Users/rajatgarg/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/threading.py", line 1075, in _bootstrap_inner
+    self.run()
+  File "/Users/rajatgarg/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/threading.py", line 1012, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/rajatgarg/Documents/AI driven demand forecasting using machine learning and time series models/project/src/evaluation/run_pilot.py", line 38, in watch
+    for c in p.children(recursive=True):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajatgarg/Documents/AI driven demand forecasting using machine learning and time series models/project/.audit_deps/psutil/__init__.py", line 978, in children
+    ppid_map = _ppid_map()
+               ^^^^^^^^^^^
+  File "/Users/rajatgarg/Documents/AI driven demand forecasting using machine learning and time series models/project/.audit_deps/psutil/__init__.py", line 256, in _ppid_map
+    for pid in pids():
+               ^^^^^^
+  File "/Users/rajatgarg/Documents/AI driven demand forecasting using machine learning and time series models/project/.audit_deps/psutil/__init__.py", line 1485, in pids
+    ret = sorted(_psplatform.pids())
+                 ^^^^^^^^^^^^^^^^^^
+  File "/Users/rajatgarg/Documents/AI driven demand forecasting using machine learning and time series models/project/.audit_deps/psutil/_psosx.py", line 320, in pids
+    ls = cext.pids()
+         ^^^^^^^^^^^
+PermissionError: [Errno 1] Operation not permitted (originated from sysctl() malloc 1/3)
+dunnhumby calibration_fit Transformer
+Exception in thread Thread-5 (watch):
+Traceback (most recent call last):
+  File "/Users/rajatgarg/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/threading.py", line 1075, in _bootstrap_inner
+    self.run()
+  File "/Users/rajatgarg/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/threading.py", line 1012, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/rajatgarg/Documents/AI driven demand forecasting using machine learning and time series models/project/src/evaluation/run_pilot.py", line 38, in watch
+    for c in p.children(recursive=True):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajatgarg/Documents/AI driven demand forecasting using machine learning and time series models/project/.audit_deps/psutil/__init__.py", line 978, in children
+    ppid_map = _ppid_map()
+               ^^^^^^^^^^^
+  File "/Users/rajatgarg/Documents/AI driven demand forecasting using machine learning and time series models/project/.audit_deps/psutil/__init__.py", line 256, in _ppid_map
+    for pid in pids():
+               ^^^^^^
+  File "/Users/rajatgarg/Documents/AI driven demand forecasting using machine learning and time series models/project/.audit_deps/psutil/__init__.py", line 1485, in pids
+    ret = sorted(_psplatform.pids())
+                 ^^^^^^^^^^^^^^^^^^
+  File "/Users/rajatgarg/Documents/AI driven demand forecasting using machine learning and time series models/project/.audit_deps/psutil/_psosx.py", line 320, in pids
+    ls = cext.pids()
+         ^^^^^^^^^^^
+PermissionError: [Errno 1] Operation not permitted (originated from sysctl() malloc 1/3)
+dunnhumby pilot_validation Naive
+Exception in thread Thread-6 (watch):
+Traceback (most recent call last):
+  File "/Users/rajatgarg/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/threading.py", line 1075, in _bootstrap_inner
+    self.run()
+  File "/Users/rajatgarg/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/threading.py", line 1012, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/rajatgarg/Documents/AI driven demand forecasting using machine learning and time series models/project/src/evaluation/run_pilot.py", line 38, in watch
+    for c in p.children(recursive=True):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajatgarg/Documents/AI driven demand forecasting using machine learning and time series models/project/.audit_deps/psutil/__init__.py", line 978, in children
+    ppid_map = _ppid_map()
+               ^^^^^^^^^^^
+  File "/Users/rajatgarg/Documents/AI driven demand forecasting using machine learning and time series models/project/.audit_deps/psutil/__init__.py", line 256, in _ppid_map
+    for pid in pids():
+               ^^^^^^
+  File "/Users/rajatgarg/Documents/AI driven demand forecasting using machine learning and time series models/project/.audit_deps/psutil/__init__.py", line 1485, in pids
+    ret = sorted(_psplatform.pids())
+                 ^^^^^^^^^^^^^^^^^^
+  File "/Users/rajatgarg/Documents/AI driven demand forecasting using machine learning and time series models/project/.audit_deps/psutil/_psosx.py", line 320, in pids
+    ls = cext.pids()
+         ^^^^^^^^^^^
+PermissionError: [Errno 1] Operation not permitted (originated from sysctl() malloc 1/3)
+dunnhumby pilot_validation SARIMA
+Exception in thread Thread-7 (watch):
+Traceback (most recent call last):
+  File "/Users/rajatgarg/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/threading.py", line 1075, in _bootstrap_inner
+    self.run()
+  File "/Users/rajatgarg/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/threading.py", line 1012, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/rajatgarg/Documents/AI driven demand forecasting using machine learning and time series models/project/src/evaluation/run_pilot.py", line 38, in watch
+    for c in p.children(recursive=True):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajatgarg/Documents/AI driven demand forecasting using machine learning and time series models/project/.audit_deps/psutil/__init__.py", line 978, in children
+    ppid_map = _ppid_map()
+               ^^^^^^^^^^^
+  File "/Users/rajatgarg/Documents/AI driven demand forecasting using machine learning and time series models/project/.audit_deps/psutil/__init__.py", line 256, in _ppid_map
+    for pid in pids():
+               ^^^^^^
+  File "/Users/rajatgarg/Documents/AI driven demand forecasting using machine learning and time series models/project/.audit_deps/psutil/__init__.py", line 1485, in pids
+    ret = sorted(_psplatform.pids())
+                 ^^^^^^^^^^^^^^^^^^
+  File "/Users/rajatgarg/Documents/AI driven demand forecasting using machine learning and time series models/project/.audit_deps/psutil/_psosx.py", line 320, in pids
+    ls = cext.pids()
+         ^^^^^^^^^^^
+PermissionError: [Errno 1] Operation not permitted (originated from sysctl() malloc 1/3)
+dunnhumby pilot_validation XGBoost
+Exception in thread Thread-8 (watch):
+Traceback (most recent call last):
+  File "/Users/rajatgarg/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/threading.py", line 1075, in _bootstrap_inner
+    self.run()
+  File "/Users/rajatgarg/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/threading.py", line 1012, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/rajatgarg/Documents/AI driven demand forecasting using machine learning and time series models/project/src/evaluation/run_pilot.py", line 38, in watch
+    for c in p.children(recursive=True):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajatgarg/Documents/AI driven demand forecasting using machine learning and time series models/project/.audit_deps/psutil/__init__.py", line 978, in children
+    ppid_map = _ppid_map()
+               ^^^^^^^^^^^
+  File "/Users/rajatgarg/Documents/AI driven demand forecasting using machine learning and time series models/project/.audit_deps/psutil/__init__.py", line 256, in _ppid_map
+    for pid in pids():
+               ^^^^^^
+  File "/Users/rajatgarg/Documents/AI driven demand forecasting using machine learning and time series models/project/.audit_deps/psutil/__init__.py", line 1485, in pids
+    ret = sorted(_psplatform.pids())
+                 ^^^^^^^^^^^^^^^^^^
+  File "/Users/rajatgarg/Documents/AI driven demand forecasting using machine learning and time series models/project/.audit_deps/psutil/_psosx.py", line 320, in pids
+    ls = cext.pids()
+         ^^^^^^^^^^^
+PermissionError: [Errno 1] Operation not permitted (originated from sysctl() malloc 1/3)
+dunnhumby pilot_validation LSTM
+Exception in thread Thread-9 (watch):
+Traceback (most recent call last):
+  File "/Users/rajatgarg/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/threading.py", line 1075, in _bootstrap_inner
+    self.run()
+  File "/Users/rajatgarg/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/threading.py", line 1012, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/rajatgarg/Documents/AI driven demand forecasting using machine learning and time series models/project/src/evaluation/run_pilot.py", line 38, in watch
+    for c in p.children(recursive=True):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajatgarg/Documents/AI driven demand forecasting using machine learning and time series models/project/.audit_deps/psutil/__init__.py", line 978, in children
+    ppid_map = _ppid_map()
+               ^^^^^^^^^^^
+  File "/Users/rajatgarg/Documents/AI driven demand forecasting using machine learning and time series models/project/.audit_deps/psutil/__init__.py", line 256, in _ppid_map
+    for pid in pids():
+               ^^^^^^
+  File "/Users/rajatgarg/Documents/AI driven demand forecasting using machine learning and time series models/project/.audit_deps/psutil/__init__.py", line 1485, in pids
+    ret = sorted(_psplatform.pids())
+                 ^^^^^^^^^^^^^^^^^^
+  File "/Users/rajatgarg/Documents/AI driven demand forecasting using machine learning and time series models/project/.audit_deps/psutil/_psosx.py", line 320, in pids
+    ls = cext.pids()
+         ^^^^^^^^^^^
+PermissionError: [Errno 1] Operation not permitted (originated from sysctl() malloc 1/3)
+dunnhumby pilot_validation Transformer
+Exception in thread Thread-10 (watch):
+Traceback (most recent call last):
+  File "/Users/rajatgarg/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/threading.py", line 1075, in _bootstrap_inner
+    self.run()
+  File "/Users/rajatgarg/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/threading.py", line 1012, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/rajatgarg/Documents/AI driven demand forecasting using machine learning and time series models/project/src/evaluation/run_pilot.py", line 38, in watch
+    for c in p.children(recursive=True):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajatgarg/Documents/AI driven demand forecasting using machine learning and time series models/project/.audit_deps/psutil/__init__.py", line 978, in children
+    ppid_map = _ppid_map()
+               ^^^^^^^^^^^
+  File "/Users/rajatgarg/Documents/AI driven demand forecasting using machine learning and time series models/project/.audit_deps/psutil/__init__.py", line 256, in _ppid_map
+    for pid in pids():
+               ^^^^^^
+  File "/Users/rajatgarg/Documents/AI driven demand forecasting using machine learning and time series models/project/.audit_deps/psutil/__init__.py", line 1485, in pids
+    ret = sorted(_psplatform.pids())
+                 ^^^^^^^^^^^^^^^^^^
+  File "/Users/rajatgarg/Documents/AI driven demand forecasting using machine learning and time series models/project/.audit_deps/psutil/_psosx.py", line 320, in pids
+    ls = cext.pids()
+         ^^^^^^^^^^^
+PermissionError: [Errno 1] Operation not permitted (originated from sysctl() malloc 1/3)
+dunnhumby finished pilot
